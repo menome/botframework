@@ -5,6 +5,7 @@ var express = require("express");
 var logger = require('./src/logger');
 var rabbit = require('./src/rabbit');
 var mergeConf = require('./src/config.js');
+var neo4j = require('./src/neo4j')
 
 // Constructor for bot framework.
 module.exports = (function() {
@@ -17,7 +18,7 @@ module.exports = (function() {
       status: "idle"
     },
     rabbitClient: {},
-    dbClient: {}
+    neo4jClient: {}
   };
   
   // Call this before starting the bot.
@@ -27,6 +28,8 @@ module.exports = (function() {
 
     if(bot.config.rabbit.enable)
       bot.rabbitClient = new rabbit(bot.config.rabbit);
+    if(bot.config.neo4j.enable)
+      bot.neo4jClient = new neo4j(bot.config.neo4j);
   }
 
   // Function to update status.
@@ -62,7 +65,7 @@ module.exports = (function() {
 
   // Allow the user to publish to rabbitmq. (with the routing key and exchange configured.)
   bot.rabbitPublish = function(msg)  {
-    bot.rabbitClient.publishMessage(msg)
+    return bot.rabbitClient.publishMessage(msg)
   }
 
   // Allow the user to create a queue and subscribe to a message.
@@ -70,7 +73,11 @@ module.exports = (function() {
   // The promise should be falsy if we want to nack the message without requeue.
   // Should throw an exception if we want to nack and requeue it.
   bot.rabbitSubscribe = function(queueName,handleMessage,schemaName) {
-    bot.rabbitClient.addListener(queueName,handleMessage,schemaName)
+    return bot.rabbitClient.addListener(queueName,handleMessage,schemaName)
+  }
+
+  bot.query = function(query,params,cb) {
+    return bot.neo4jClient.query(query,params,cb)
   }
 
   // Allow the user to start the server.

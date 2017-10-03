@@ -14,6 +14,12 @@ bot.configure({
     url: 'amqp://rabbitmq:rabbitmq@localhost:5672?heartbeat=3600',
     routingKey: 'syncevents.harvester.updates.example',
     exchange: 'syncevents'
+  },
+  neo4j: {
+    enable: true,
+    url: "bolt://localhost",
+    user: "neo4j",
+    pass: "password"
   }
 })
 
@@ -30,10 +36,6 @@ bot.registerEndpoint({
     getEndpoint(url,transform);
   })
 })
-
-bot.rabbitSubscribe('testqueue',function(msg) {
-  console.log(msg)
-},'harvesterMessageSchema')
 
 // Fetches from the URL, transforms the results using the transform function, publishes the message.
 function getEndpoint(uri, transformFunc) {

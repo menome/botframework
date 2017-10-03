@@ -26,14 +26,14 @@
   "license": "Commercial",
   "devDependencies": {
     "mocha": "^3.4.2",
-    "chai": "^4.1.0",
+    "chai": "^4.1.2",
     "nodemon": "latest",
-    "mock-require": "^2.0.1"
+    "mock-require": "^2.0.2"
   },
   "dependencies": {
     "forever": "latest",
     "express": "latest",
-    "ajv": "^5.2.2",
+    "ajv": "^5.2.3",
     "amqplib": "^0.5.1",
     "request": "latest",
     "request-promise": "latest",
