@@ -1,0 +1,7 @@
+{
+  "rabbit": {
+    "url": "amqp://rabbitmq:rabbitmq@localhost:5672?heartbeat=3600",
+    "routingKey": "syncevents.harvester.updates.example",
+    "exchange": "syncevents"
+  }
+}
