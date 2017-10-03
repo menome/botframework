@@ -2,25 +2,17 @@
 
 var bot = require('../index.js')
 var models = require('./models.js')
+var config = require('./config.js');
 var rp = require('request-promise');
 
 // We only need to do this once. Bot is a singleton.
 bot.configure({
-  logging: true,
   name: "JsonPlaceholder harvester",
   desc: "Harvests from JSON Placeholder",
-  rabbit: {
-    enable: true,
-    url: 'amqp://rabbitmq:rabbitmq@localhost:5672?heartbeat=3600',
-    routingKey: 'syncevents.harvester.updates.example',
-    exchange: 'syncevents'
-  },
-  neo4j: {
-    enable: true,
-    url: "bolt://localhost",
-    user: "neo4j",
-    pass: "password"
-  }
+  logging: config.get('logging'),
+  port: config.get('port'),
+  rabbit: config.get('rabbit'),
+  neo4j: config.get('neo4j')
 })
 
 // Register our sync endpoint.

@@ -24,6 +24,7 @@ module.exports = function(config) {
   }
 
   // Handles parsing of the message into JSON and validating against the schema.
+  // On success, passes the message on.
   function handlerWrapper(msg,handler,schemaName) {
     var parsed = {};
     
@@ -66,8 +67,8 @@ module.exports = function(config) {
         rabbitChannel = channel;
         return channel.assertExchange(config.exchange, config.exchangeType, {durable: true});
       })
+      // When we're connected, register all our listeners/handlers.
       .then((exchange) => {
-        // When we're connected, register all our listeners.
         handlers.forEach(({handler,queueName,schemaName}) => {
           return rabbitChannel.assertQueue(queueName)
             .then(function(q) {
@@ -77,17 +78,13 @@ module.exports = function(config) {
                 return handlerWrapper(msg,handler,schemaName)
                   .then(function (result) {
                     if(result) rabbitChannel.ack(msg);
-                    else {
-                      rabbitChannel.nack(msg, false, false);
-                    }
+                    else rabbitChannel.nack(msg, false, false);
                   })
                   .catch(function (err) {
                     log.error(err);
                     rabbitChannel.nack(msg, false, false);
                   });
-              }, {
-                noAck: false
-              })
+              }, { noAck: false })
             })
             .catch((err) => {
               log.error("Failed to establish channel", err.message);
@@ -99,6 +96,8 @@ module.exports = function(config) {
       })
   }
 
+  // Allow us to publish a message.
+  // Optionally validate against a schema for some additional integrity.
   this.publishMessage = function(msg,schemaName) {
     if(!rabbitChannel) return Promise.resolve(false);
 
@@ -111,6 +110,7 @@ module.exports = function(config) {
     }
 
     var messageBuffer = new Buffer(JSON.stringify(msg));
+    //TODO: Handle when publish queues messages due to full buffers.
     return rabbitChannel.publish(config.exchange,config.routingKey,messageBuffer)
   }
 

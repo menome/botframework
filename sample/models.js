@@ -3,8 +3,10 @@
  * These are generally things like mappings, which convert source data into the refinery message schema
  */
 
+var config = require('./config.js');
+
 module.exports = {};
-var baseUrl = "https://jsonplaceholder.typicode.com"
+var baseUrl = config.get('url');
 module.exports.queryTransforms = [
   {
     desc: "Pulling Posts",

@@ -4,7 +4,7 @@ var http = require('http');
 var express = require("express");
 var logger = require('./src/logger');
 var rabbit = require('./src/rabbit');
-var mergeConf = require('./src/config.js');
+var config = require('./src/config.js');
 var neo4j = require('./src/neo4j')
 
 // Constructor for bot framework.
@@ -20,16 +20,24 @@ module.exports = (function() {
     rabbitClient: {},
     neo4jClient: {}
   };
+  // Surface the convict configuration to bots.
+  bot.configSchema = config.configSchema;
+
   
   // Call this before starting the bot.
-  bot.configure = function(config) {
-    bot.config = mergeConf(config);
+  bot.configure = function(conf) {
+    bot.config = config.mergeConf(conf);
     bot.logger.logging = bot.config.logging;
 
-    if(bot.config.rabbit.enable)
+    if(bot.config.rabbit.enable) {
+      bot.logger.info("Setting up Rabbit");
       bot.rabbitClient = new rabbit(bot.config.rabbit);
-    if(bot.config.neo4j.enable)
+    }
+      
+    if(bot.config.neo4j.enable) {
+      bot.logger.info("Setting up Neo4j");
       bot.neo4jClient = new neo4j(bot.config.neo4j);
+    }
   }
 
   // Function to update status.

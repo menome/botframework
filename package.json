@@ -38,7 +38,8 @@
     "request": "latest",
     "request-promise": "latest",
     "neo4j-driver": "^1.4.1",
-    "uuid": "^3.1.0"
+    "uuid": "^3.1.0",
+    "convict": "^4.0.1"
   },
   "bugs": {
     "url": "https://github.com/menome/botframework/issues"
