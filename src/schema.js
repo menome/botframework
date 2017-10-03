@@ -16,7 +16,7 @@ module.exports.validate = function(schema, data) {
 module.exports.schemas = {
   harvesterMessageSchema: {
     "$schema":"http://json-schema.org/draft-06/schema#",
-    "title": "tldrmessage",
+    "title": "harvesterMessageSchema",
     "type": "object",
     "required": ["Name","NodeType","ConformedDimensions"],
     "additionalProperties": false,
@@ -76,6 +76,23 @@ module.exports.schemas = {
       "Priority": {
         "type": "number",
         "minimum": 0
+      }
+    }
+  },
+  botState: {
+    "$schema":"http://json-schema.org/draft-06/schema#",
+    "required": ["state"],
+    "additionalProperties": false,
+    "properties": {
+      "state": {
+        "type": "string",
+        "enum": ["idle","initializing","working","failed"]
+      },
+      "message": {
+        "type": "string"
+      },
+      "progressPercent": {
+        "type": "number"
       }
     }
   }

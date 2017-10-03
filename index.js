@@ -6,6 +6,7 @@ var logger = require('./src/logger');
 var rabbit = require('./src/rabbit');
 var config = require('./src/config.js');
 var neo4j = require('./src/neo4j')
+var schema = require('./src/schema')
 
 // Constructor for bot framework.
 module.exports = (function() {
@@ -13,9 +14,14 @@ module.exports = (function() {
     config: {},
     logger: logger,
     web: express(),
-    operations: [],
+    operations: [{
+      "name": "Status",
+      "path": "/status",
+      "method": "GET",
+      "desc": "Gets the bot's current applications status."
+    }],
     state: {
-      status: "idle"
+      status: "initializing"
     },
     rabbitClient: {},
     neo4jClient: {}
@@ -23,7 +29,17 @@ module.exports = (function() {
   // Surface the convict configuration to bots.
   bot.configSchema = config.configSchema;
 
+  bot.changeState = function(newState) {
+    var errors = schema.validate('botState',newState)
   
+    if (errors) {
+      bot.logger.error("Not a valid application state:", errors);
+      return false;
+    }
+
+    return bot.state = newState;
+  }
+
   // Call this before starting the bot.
   bot.configure = function(conf) {
     bot.config = config.mergeConf(conf);
@@ -38,11 +54,6 @@ module.exports = (function() {
       bot.logger.info("Setting up Neo4j");
       bot.neo4jClient = new neo4j(bot.config.neo4j);
     }
-  }
-
-  // Function to update status.
-  bot.changeState = function(status) {
-    bot.state.status = status;
   }
 
   // All bots have the same root response format.

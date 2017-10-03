@@ -9,7 +9,7 @@ var defaults = {
   name: "Unconfigured Harvester",
   desc: "Harvests from something",
   logging: "true",
-  port: process.env.PORT || 3000,
+  port: 80,
   rabbit: {
     enable: false,
     url: 'amqp://rabbitmq:rabbitmq@rabbit:5672?heartbeat=3600',

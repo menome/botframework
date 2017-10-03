@@ -50,3 +50,4 @@ function getEndpoint(uri, transformFunc) {
 
 // Start the bot.
 bot.start();
+bot.changeState({state: "idle"})
