@@ -1,21 +1,24 @@
 # Menome Bot Framework
 
-* [API Doc](./API.md)
+[View the full API Doc here](./API.md)
 
 This package contains a common framework for all bots that integrate with theLink or the Menome stack.
 
-Bots should fundamentally have the following functionality.
-* Can Connect to RabbitMQ and send + receive messages based on routing keys.
+Bots commonly have the following functionality:
+* Can Connect to RabbitMQ and send + receive messages with routing keys.
+* Be able to connect to and run queries on the graph.
 * Can describe themselves, their functionality, and their state via API calls.
   * eg. A harvester bot should be able to tell us, via REST calls, that it has a /sync endpoint, or that performing a GET on /status gives the progress of the current sync job.
 
 ## Usage
 To use the framework, just follow these steps:
+
 1. Import the framework
-2. Call bot.configure() [(See Below)](#configuration)
+2. Configure with `bot.configure()` [(See Below)](#configuration)
 3. Register web endpoints. [(See Below)](#register-web-endpoints)
-4. (Optionally) Use bundled functionality [(See Below)](#bundled-functionality)
-5. Write Bot Logic
+4. Start the bot by calling `bot.start()`
+
+For a complete list of functions that you can utilize, see the [API Docs](./API.md)
 
 ## Configuration
 
@@ -90,61 +93,4 @@ bot.registerEndpoint({
   res.send("Starting the Harvest")
   // Run some sync logic.
 })
-```
-
-## Bundled Functionality
-
-### Publish to RabbitMQ
-
-If you have configured RabbitMQ, you can publish a message on the configured exchange with the configured routing key as follows:
-
-```javascript
-bot.rabbitPublish({"message": "Hello"})
-```
-The second argument can be the name of a bundled schema. An error will be logged if you attempt to publish a message that does not pass the schema.
-
-### Listen for RabbitMQ Messages
-
-If you have configured RabbitMQ, you can declare a named queue with a message handler as follows:
-
-```javascript
-bot.rabbitSubscribe('testqueue',function(msg) {
-  // Run some logic here.
-  // This should return a promise. Truthy if successful, falsy to NACK the message without requeueing.
-  // If an error is thrown, the message will be NACKed and requeued.
-},'harvesterMessageSchema')
-```
-The second argument can be the name of a bundled schema. An error will be logged if you receive a message that does not pass the schema.
-
-### Run Neo4j Queries
-
-If you have enabled and configured Neo4j, you can run queries as follows:
-
-```javascript
-bot.query("MATCH (n) WHERE n.prop = {prop} RETURN n LIMIT 25",{prop: "value"}).then((result) => {
-  // Do stuff with result
-}).catch((err) => {
-  // Do stuff with error.
-})
-```
-
-### Log Events
-
-The bot also comes with a logging wrapper. Currently it just spits a message to STDOUT but this central point allows us to implement logging logic down the road.
-
-```javascript
-bot.logger.error("Something went wrong");
-```
-
-### Update Application Status
-
-All bots have a standard way of describing their state. It is up to the programmer to manage the state of their bot.
-
-Valid states are: 'idle','initializing','working','failed' The application's state also optionally allows for a message and a percentage progress indicator.
-
-Examples: 
-```javascript
-bot.changeState({state: 'working', progressPercent: 16.5});
-bot.changeState({state: 'failed', message: "Database is unreachable"});
-bot.changeState({state: 'idle'});
 ```
