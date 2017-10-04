@@ -107,7 +107,7 @@ module.exports = (function() {
 
   // Allow the user to publish to rabbitmq. (with the routing key and exchange configured.)
   bot.rabbitPublish = function(...args) {
-    return rabbitClient.publishMessage(...args;
+    return rabbitClient.publishMessage(...args)
   }
 
   // Allow the user to create a queue and subscribe to a message.
