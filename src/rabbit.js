@@ -1,8 +1,7 @@
 /*
  * Copyright (C) 2017 Menome Technologies Inc.
  *
- * Connects to rabbitmq and listens for messages harvesters.
- * Handles validation of messages, as well as sending acks and nacks.
+ * Manages connection to RabbitMQ.
  */
 "use strict";
 var amqp = require('amqplib');

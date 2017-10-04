@@ -1,13 +1,15 @@
 /**
+ * Copyright (c) Menome Technologies Inc.
+ * 
  * For holding and validating JSON Schemas
  */
+"use strict";
 var Ajv = require('ajv');
 
-//TODO: More robust way to manage and use schemas (We're currently using magic strings.)
-
-// Validate
+// Validate data against a schema.
 module.exports.validate = function(schema, data) {
-  var thisSchema = module.exports.schemas[schema];
+  var thisSchema = schema;
+  if(typeof thisSchema === 'string') thisSchema = module.exports.schemas[schema];
   if(!thisSchema) throw new Error("Schema does not exist.");
   var ajv = new Ajv(); // options can be passed, e.g. {allErrors: true} 
   var validateMessage = ajv.compile(thisSchema);
@@ -16,9 +18,9 @@ module.exports.validate = function(schema, data) {
 }
 
 module.exports.schemas = {
-  harvesterMessageSchema: {
+  harvesterMessage: {
     "$schema":"http://json-schema.org/draft-06/schema#",
-    "title": "harvesterMessageSchema",
+    "title": "harvesterMessage",
     "type": "object",
     "required": ["Name","NodeType","ConformedDimensions"],
     "additionalProperties": false,

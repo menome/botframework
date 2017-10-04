@@ -1,4 +1,6 @@
-/**
+/*
+ * Copyright (C) 2017 Menome Technologies Inc.
+ *
  * Helper functions for bots.
  */
 "use strict";

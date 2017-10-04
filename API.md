@@ -75,13 +75,13 @@ Allow the user to create a queue and subscribe to a message. handleMessage shoul
 **Parameters**
 * queueName: the name of the Rabbit Queue this will declare.
 * handler: A function for handling messages. Messages will be serialized into javascript objects. This should return a promise. Truthy if successful, falsy to NACK the message without requeueing. If an error is thrown, the message will be NACKed and requeued.
-* schema: Optional. The name of the message schema to validate against. Messages will be rejected if they fail this check.
+* schema: Optional. The message schema to validate against. This can be a JSON schema object, or the name of a schema bundled with the bot framework. Messages will be rejected if they fail this validation.
 
 **Example**
 ```javascript
 bot.rabbitSubscribe('testqueue',function(msg) {
   // Run some logic here.
-},'harvesterMessageSchema')
+},'harvesterMessage')
 ```
 
 ## rabbitPublish(msg, schema)
@@ -89,19 +89,20 @@ Allow the user to publish to rabbitmq. (with the routing key and exchange config
 
 **Parameters**
 * msg: The message to publish. It will be serialized to JSON.
-* schema: Optional. The name of the message schema
+* schema: Optional. This can be a JSON schema object, or the name of a schema bundled with the bot framework. Throws an error if the message does not match the schema.
 
 **Example**
 ```javascript
 bot.rabbitPublish({"test": true})
 ```
 
-## query(query,params)
-Run a neo4j Query
+## query(query,params,cb)
+Run a neo4j Query. Returns a promise that gives the result of the query. Can optionally accept a callback function if you're into that style
 
 **Parameters**
 * query: A string representation of the cypher query.
 * params: A dictionary of cypher query parameters.
+* cb: Callback function. Optional. Can be used instead of promise. Called as cb(err,result). 
 
 **Example**
 ```javascript

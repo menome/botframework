@@ -1,5 +1,10 @@
-#!/usr/bin/env node
+/*
+ * Copyright (C) 2017 Menome Technologies Inc.
+ *
+ * Bot Framework Root
+ */
 "use strict";
+
 var http = require('http');
 var express = require("express");
 var logger = require('./src/logger');
@@ -7,38 +12,34 @@ var rabbit = require('./src/rabbit');
 var config = require('./src/config.js');
 var neo4j = require('./src/neo4j')
 var schema = require('./src/schema')
+var helpers = require('./src/helpers')
 
-// Constructor for bot framework.
 module.exports = (function() {
-  // TODO: Maybe not all of these should be public variables.
+  // Private Variables
+  var rabbitClient = {}
+  var neo4jClient = {}
+  var state = {
+    status: "initializing"
+  }
+  var web = express()
+
+  // Public Variables
   var bot = {
     config: {},
     logger: logger,
-    web: express(),
-    operations: [{
-      "name": "Status",
-      "path": "/status",
-      "method": "GET",
-      "desc": "Gets the bot's current applications status."
-    }],
-    state: {
-      status: "initializing"
-    },
-    rabbitClient: {},
-    neo4jClient: {}
+    operations: [],
+    configSchema: config.configSchema, // Surface the convict configuration to bots.
+    helpers: helpers // Helper functions. Because why not.
   };
-  // Surface the convict configuration to bots.
-  bot.configSchema = config.configSchema;
+  
+  ////////////////////////////////////
+  // Bot Functions
 
+  // Change the state of the bot.
   bot.changeState = function(newState) {
     var errors = schema.validate('botState',newState)
-  
-    if (errors) {
-      bot.logger.error("Not a valid application state:", errors);
-      return false;
-    }
-
-    return bot.state = newState;
+    if (errors) bot.logger.error("Not a valid application state:", errors);
+    else return state = newState;
   }
 
   // Call this before starting the bot.
@@ -48,17 +49,29 @@ module.exports = (function() {
 
     if(bot.config.rabbit.enable) {
       bot.logger.info("Setting up Rabbit");
-      bot.rabbitClient = new rabbit(bot.config.rabbit);
+      rabbitClient = new rabbit(bot.config.rabbit);
     }
       
     if(bot.config.neo4j.enable) {
       bot.logger.info("Setting up Neo4j");
-      bot.neo4jClient = new neo4j(bot.config.neo4j);
+      neo4jClient = new neo4j(bot.config.neo4j);
     }
   }
 
-  // All bots have the same root response format.
-  bot.web.get('/', function (req, res, next) {
+  // Start the bot.
+  bot.start = function() {
+    http.createServer(web).listen(bot.config.port);
+    bot.logger.info("Listening on port", bot.config.port)
+
+    // RabbitMQ Config.
+    if(bot.config.rabbit.enable) rabbitClient.connect();
+  }
+
+  ////////////////////////////////////
+  // Web Calls
+
+  // Send generic response for GET on '/'
+  web.get('/', function (req, res, next) {
     return res.json({
       name: bot.config.name,
       desc: bot.config.desc,
@@ -66,50 +79,41 @@ module.exports = (function() {
     });
   });
 
-  // All bots have the status endpoint.
-  bot.web.get('/status', function(req,res,next) {
-    return res.json(bot.state);
-  });
-
-  // Allow the user to register operations.
-  // TODO: Allow URL parameters, or body parsing.
+  // Allow the user to register operations. Do this before starting the bot.
+  // TODO: Allow configured URL parameters and/or body parsing.
   bot.registerEndpoint = function(meta, func) {
     bot.operations.push(meta);
     switch(meta.method) {
-      case 'GET': bot.web.get(meta.path,func); break;
-      case 'POST': bot.web.post(meta.path,func); break;
-      case 'PUT': bot.web.put(meta.path,func); break;
-      case 'OPTIONS': bot.web.options(meta.path,func); break;
+      case 'GET': web.get(meta.path,func); break;
+      case 'POST': web.post(meta.path,func); break;
+      case 'PUT': web.put(meta.path,func); break;
+      case 'OPTIONS': web.options(meta.path,func); break;
       default: bot.logger.error("Could not register operation.")
     }
   }
 
+  // All bots have the status endpoint. Register it here.
+  bot.registerEndpoint({
+    "name": "Status",
+    "path": "/status",
+    "method": "GET",
+    "desc": "Gets the bot's current status."
+  }, function(req,res,next) {
+    return res.json(state);
+  })
+
+  ////////////////////////////////////
+  // Helper Functions
+
   // Allow the user to publish to rabbitmq. (with the routing key and exchange configured.)
-  bot.rabbitPublish = function(msg)  {
-    return bot.rabbitClient.publishMessage(msg)
-  }
+  bot.rabbitPublish = rabbitClient.publishMessage;
 
   // Allow the user to create a queue and subscribe to a message.
-  // handleMessage should be a function that takes a message and returns a promise.
-  // The promise should be falsy if we want to nack the message without requeue.
-  // Should throw an exception if we want to nack and requeue it.
-  bot.rabbitSubscribe = function(queueName,handleMessage,schemaName) {
-    return bot.rabbitClient.addListener(queueName,handleMessage,schemaName)
-  }
+  // Do this before starting the bot.
+  bot.rabbitSubscribe = rabbitClient.addListener
 
-  bot.query = function(query,params,cb) {
-    return bot.neo4jClient.query(query,params,cb)
-  }
-
-  // Allow the user to start the server.
-  bot.start = function() {
-    // Web
-    http.createServer(bot.web).listen(bot.config.port);
-    bot.logger.info("Listening on port", bot.config.port)
-
-    // Rabbit
-    if(bot.config.rabbit.enable) bot.rabbitClient.connect();
-  }
+  // Allow the user to query the DB.
+  bot.query = neo4jClient.query
 
   return bot;
 }());

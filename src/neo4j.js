@@ -3,6 +3,8 @@
 *
 * Contains shared code for contacting the Neo4j Database.
 */
+"use strict";
+
 var neo4j = require('neo4j-driver').v1;
 var conf = require('./config');
 var uuidV4 = require('uuid/v4');

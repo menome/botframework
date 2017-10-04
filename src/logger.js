@@ -4,7 +4,9 @@
  * Logging wrapper.
  * TODO: Plug this into a more intelligent logging service.
  */
+
 "use strict";
+
 module.exports = {
   logging: true,
   info: function(msg, ...args) {
