@@ -68,16 +68,7 @@ module.exports = (function() {
   }
 
   ////////////////////////////////////
-  // Web Calls
-
-  // Send generic response for GET on '/'
-  web.get('/', function (req, res, next) {
-    return res.json({
-      name: bot.config.name,
-      desc: bot.config.desc,
-      operations: bot.operations
-    });
-  });
+  // Webservice Configuration
 
   // Allow the user to register operations. Do this before starting the bot.
   // TODO: Allow configured URL parameters and/or body parsing.
@@ -91,6 +82,15 @@ module.exports = (function() {
       default: bot.logger.error("Could not register operation.")
     }
   }
+
+  // Send generic response for GET on '/'
+  web.get('/', function (req, res, next) {
+    return res.json({
+      name: bot.config.name,
+      desc: bot.config.desc,
+      operations: bot.operations
+    });
+  });
 
   // All bots have the status endpoint. Register it here.
   bot.registerEndpoint({

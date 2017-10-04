@@ -40,7 +40,7 @@ module.exports.mergeConf = function(conf) {
 }
 
 // Config schema for use with mozilla convict.
-// This isn't necessary it's just to make the bot's lives easier.
+// This isn't required. It's just to make the bot's lives easier.
 module.exports.configSchema = {
   port: {
     doc: "The port to listen on.",
