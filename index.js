@@ -10,6 +10,7 @@ var schema = require('./src/schema')
 
 // Constructor for bot framework.
 module.exports = (function() {
+  // TODO: Maybe not all of these should be public variables.
   var bot = {
     config: {},
     logger: logger,
@@ -71,6 +72,7 @@ module.exports = (function() {
   });
 
   // Allow the user to register operations.
+  // TODO: Allow URL parameters, or body parsing.
   bot.registerEndpoint = function(meta, func) {
     bot.operations.push(meta);
     switch(meta.method) {

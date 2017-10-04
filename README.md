@@ -1,5 +1,7 @@
 # Menome Bot Framework
 
+* [API Doc](./API.md)
+
 This package contains a common framework for all bots that integrate with theLink or the Menome stack.
 
 Bots should fundamentally have the following functionality.
@@ -13,7 +15,7 @@ To use the framework, just follow these steps:
 2. Call bot.configure() [(See Below)](#configuration)
 3. Register web endpoints. [(See Below)](#register-web-endpoints)
 4. (Optionally) Use bundled functionality [(See Below)](#bundled-functionality)
-5. Develop bot logic.
+5. Write Bot Logic
 
 ## Configuration
 

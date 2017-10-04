@@ -3,6 +3,8 @@
  */
 var Ajv = require('ajv');
 
+//TODO: More robust way to manage and use schemas (We're currently using magic strings.)
+
 // Validate
 module.exports.validate = function(schema, data) {
   var thisSchema = module.exports.schemas[schema];
