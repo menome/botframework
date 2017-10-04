@@ -4,11 +4,9 @@
   "description": "Common functionality for building bots (containerized microservices with a specific set of API calls) for integration with the Menome stack",
   "main": "index.js",
   "scripts": {
-    "start": "[ \"$NODE_ENV\" = \"production\" ] && npm run prod || npm run dev",
-    "dev": "node ./node_modules/nodemon/bin/nodemon.js sample/app.js",
-    "prod": "./node_modules/forever/bin/forever --minUptime 5000 --spinSleepTime 1000 sample/app.js",
     "test": "./node_modules/mocha/bin/mocha -C test"
   },
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/menome/botframework.git"
@@ -27,19 +25,14 @@
   "devDependencies": {
     "mocha": "^4.0.0",
     "chai": "^4.1.2",
-    "nodemon": "latest",
     "mock-require": "^2.0.2"
   },
   "dependencies": {
-    "forever": "latest",
     "express": "latest",
     "ajv": "^5.2.3",
     "amqplib": "^0.5.1",
-    "request": "latest",
-    "request-promise": "latest",
     "neo4j-driver": "^1.4.1",
-    "uuid": "^3.1.0",
-    "convict": "^4.0.1"
+    "uuid": "^3.1.0"
   },
   "bugs": {
     "url": "https://github.com/menome/botframework/issues"
