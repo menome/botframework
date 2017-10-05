@@ -2,10 +2,17 @@ var assert = require('chai').assert;
 var mock = require('mock-require');
 var simple = require('simple-mock');
 var neo4jdriver = require('neo4j-driver');
-mock('neo4j-driver', neo4jdriver); // Mock the neo4j driver.
-var neo4j = require('../src/neo4j')
+
 
 describe('Neo4j', function () {
+  console.log("Starting")
+  var neo4j;
+  before(() => {
+    mock.stopAll()
+    mock('neo4j-driver', neo4jdriver); // Mock the neo4j driver.mock.stopAll()
+    neo4j = require('../src/neo4j')
+  })
+  after(()=>{mock.stopAll()})
   afterEach(function() {
     simple.restore();
   });

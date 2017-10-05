@@ -1,7 +1,6 @@
 var assert = require('chai').assert;
 var helpers = require('../src/helpers');
 
-
 describe('ParseProps', function () {
   it('Parses Properties', function () {
     var row = {

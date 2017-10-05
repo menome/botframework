@@ -8,6 +8,7 @@ var logger = require('../src/logger');
 logger.logging = false;
 
 describe('RabbitMQ', function () {
+  after(()=>{mock.stopAll()})
   afterEach(function() {
     simple.restore();
   });

@@ -8,7 +8,7 @@
 var defaults = {
   name: "Unconfigured Harvester",
   desc: "Harvests from something",
-  logging: "true",
+  logging: true,
   port: 80,
   rabbit: {
     enable: false,
