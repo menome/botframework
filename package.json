@@ -6,7 +6,6 @@
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha -C test"
   },
-  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/menome/botframework.git"
