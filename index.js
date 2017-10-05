@@ -38,7 +38,10 @@ module.exports = (function() {
   // Change the state of the bot.
   bot.changeState = function(newState) {
     var errors = schema.validate('botState',newState)
-    if (errors) bot.logger.error("Not a valid application state:", errors);
+    if (errors) {
+      bot.logger.error("Not a valid application state:", errors);
+      return false;
+    }
     else return state = newState;
   }
 
@@ -81,6 +84,7 @@ module.exports = (function() {
       case 'OPTIONS': web.options(meta.path,func); break;
       default: bot.logger.error("Could not register operation.")
     }
+    return bot.operations;
   }
 
   // Send generic response for GET on '/'
