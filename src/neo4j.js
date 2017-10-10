@@ -7,7 +7,6 @@
 
 var neo4j = require('neo4j-driver').v1;
 var conf = require('./config');
-var uuidV4 = require('uuid/v4');
 
 // Constructor for neo4j interface
 module.exports = function(config) {

@@ -7,6 +7,7 @@
 
 var http = require('http');
 var express = require("express");
+var uuidV4 = require('uuid/v4');
 var logger = require('./src/logger');
 var rabbit = require('./src/rabbit');
 var config = require('./src/config.js');
@@ -124,6 +125,9 @@ module.exports = (function() {
   bot.query = function(...args) { 
     return neo4jClient.query(...args)
   }
+
+  // Allow the user to generate UUIDs.
+  bot.genUuid = uuidV4;
 
   return bot;
 }());

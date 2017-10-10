@@ -61,7 +61,7 @@ module.exports = function(config) {
         return conn.createChannel();
       })
       .then(function(channel) {
-        log.info("Created channel for publishing")
+        log.info("Created channel")
         clearInterval(rabbitConnectInterval); // Stop scheduling this task if it's finished.
         rabbitChannel = channel;
         return channel.assertExchange(config.exchange, config.exchangeType, {durable: true});
