@@ -14,6 +14,7 @@ var config = require('./src/config.js');
 var neo4j = require('./src/neo4j')
 var schema = require('./src/schema')
 var helpers = require('./src/helpers')
+var bodyParser = require('body-parser');
 
 module.exports = (function() {
   // Private Variables
@@ -23,7 +24,8 @@ module.exports = (function() {
     status: "initializing"
   }
   var web = express()
-
+  web.use(bodyParser.json());
+  
   // Public Variables
   var bot = {
     config: {},
