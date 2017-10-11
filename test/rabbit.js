@@ -33,7 +33,9 @@ describe('RabbitMQ', function () {
     });
     rabbitClient.connect();
 
-    assert.equal(amqp.connect.callCount,1)    
+    assert.equal(amqp.connect.callCount,1)
+
+    rabbitClient.disconnect();
     done();
   });
 

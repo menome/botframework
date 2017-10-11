@@ -122,4 +122,9 @@ module.exports = function(config) {
       schemaName: schemaName
     })
   }
+
+  this.disconnect = function() {
+    if(rabbitChannel) rabbitChannel.disconnect();
+    clearInterval(rabbitConnectInterval);
+  }
 }
