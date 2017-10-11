@@ -114,17 +114,20 @@ module.exports = (function() {
 
   // Allow the user to publish to rabbitmq. (with the routing key and exchange configured.)
   bot.rabbitPublish = function(...args) {
+    if(!bot.config.rabbit.enable) return;
     return rabbitClient.publishMessage(...args)
   }
 
   // Allow the user to create a queue and subscribe to a message.
   // Do this before starting the bot.
   bot.rabbitSubscribe = function(...args) {
+    if(!bot.config.rabbit.enable) return;
     return rabbitClient.addListener(...args)
   }
 
   // Allow the user to query the DB.
   bot.query = function(...args) { 
+    if(!bot.config.neo4j.enable) return;
     return neo4jClient.query(...args)
   }
 
