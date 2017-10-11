@@ -85,6 +85,12 @@ module.exports.configSchema = {
       format: ["topic","fanout"],
       default: "topic",
       env: "RABBIT_EXCHANGE_TYPE"
+    },
+    prefetch: {
+      doc: "Number of items we can be processing concurrently",
+      format: Number,
+      default: 5,
+      env: "RABBIT_PREFETCH" 
     }
   },
   neo4j: {

@@ -62,6 +62,7 @@ module.exports = function(config) {
       })
       .then(function(channel) {
         log.info("Created channel")
+        channel.prefetch(config.prefetch); // Set our prefetch value.
         clearInterval(rabbitConnectInterval); // Stop scheduling this task if it's finished.
         rabbitChannel = channel;
         return channel.assertExchange(config.exchange, config.exchangeType, {durable: true});
