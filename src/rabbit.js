@@ -70,7 +70,7 @@ module.exports = function(config) {
       // When we're connected, register all our listeners/handlers.
       .then((exchange) => {
         handlers.forEach(({handler,queueName,schemaName}) => {
-          return rabbitChannel.assertQueue(queueName)
+          return rabbitChannel.assertQueue(queueName, {durable: true})
             .then(function(q) {
               log.info("Waiting for messages in %s on exchange '%s'", q.queue, config.exchange);
               rabbitChannel.bindQueue(q.queue, config.exchange, config.routingKey);
