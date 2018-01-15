@@ -101,6 +101,23 @@ describe('Main App', function () {
     assert.oneOf(endpointMeta,operations);
   });
 
+  it('Can create a valid response message', function () {
+    var message = bot.responseWrapper({
+      status: "success",
+      message: "Sample Message",
+      otherKey: "Other key"
+    })
+
+    assert.containsAllKeys(message,['status','message','otherKey'])
+  });
+
+  it('Can not create an invalid response message', function () {
+    assert.throws(bot.responseWrapper.bind({
+      message: "Sample Message",
+      otherKey: "Other key"
+    }), Error)
+  });
+
   it('Bot Starts', function () {
     // Configure the bot.
     bot.start();

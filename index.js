@@ -115,6 +115,20 @@ module.exports = (function() {
     return res.json(state);
   })
 
+  bot.responseWrapper = function({status, message, ...args}) {
+    if(!status) status = "success";
+    if(!message) throw new Error("API responses must contain a message.")
+
+    if(['success','failure'].indexOf(status) === -1)
+      throw new Error("Invalid status on message.")
+
+    return {
+      ...args,
+      status: status,
+      message: message
+    }
+  }
+
   ////////////////////////////////////
   // Helper Functions
 
