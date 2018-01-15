@@ -79,6 +79,12 @@ module.exports = (function() {
   // Allow the user to register operations. Do this before starting the bot.
   // TODO: Allow configured URL parameters and/or body parsing.
   bot.registerEndpoint = function(meta, func) {
+    var errors = schema.validate('endpointMetadata',meta)
+    if (errors) {
+      bot.logger.error("Not a valid endpoint definition:", errors);
+      return false;
+    }
+
     bot.operations.push(meta);
     switch(meta.method) {
       case 'GET': web.get(meta.path,func); break;

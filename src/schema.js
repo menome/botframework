@@ -99,5 +99,39 @@ module.exports.schemas = {
         "type": "number"
       }
     }
+  },
+  endpointMetadata: {
+    "$schema":"http://json-schema.org/draft-06/schema#",
+    "required": ["name","path","method","desc"],
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "method": {
+        "type": "string",
+        "enum": ["GET","POST","PUT","OPTIONS"]
+      },
+      "path": {
+        "type": "string",
+      },
+      "desc": {
+        "type": "string"
+      },
+      "params": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["name","desc"],
+          "properties": {
+            "name": {
+              "type": "string",
+            },
+            "desc": {
+              "type": "string",
+            }
+          }
+        }
+      }
+    }
   }
 }
