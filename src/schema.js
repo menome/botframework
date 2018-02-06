@@ -32,6 +32,10 @@ module.exports.schemas = {
         "type": "string",
         "pattern": "^[a-zA-Z0-9_]*$"
       },
+      "Label": { // If this is set, don't make this a card. Make it something else. (eg. a Facet)
+        "type": "string",
+        "pattern": "^[a-zA-Z0-9_]*$"
+      },
       "SourceSystem": {
         "type": "string",
         "pattern": "^[a-zA-Z0-9_\\s\.\'&]*$"
@@ -53,7 +57,11 @@ module.exports.schemas = {
             "Name": {
               "type": "string",
             },
-            "NodeType": {
+            "NodeType": { // Primary type of node.
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9_]*$"
+            },
+            "Label": { // If this is set, don't make this a card. Make it something else.
               "type": "string",
               "pattern": "^[a-zA-Z0-9_]*$"
             },
