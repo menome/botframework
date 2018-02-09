@@ -2,6 +2,7 @@
 
 [View the full API Doc here](./API.md)
 [View an example bot here](https://github.com/menome/harvesterTemplate)
+[View the schemas here](./src/schema.js)
 
 This package contains a common framework for all bots that integrate with theLink or the Menome stack.
 
