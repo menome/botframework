@@ -30,6 +30,7 @@ module.exports.parseProps = function(row, excludeCols) {
 // Input: A string.
 // Output: A UNIX epoch date. Or the input string if conversion failed.
 module.exports.convertDate = function(date) {
+  if(date instanceof Date) return date.getTime();
   if(typeof date !== 'string') return date;
   if(!isNaN(Number(date))) return date; // If it's just a number don't try to parse as a date.
 
