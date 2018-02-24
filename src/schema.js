@@ -117,7 +117,7 @@ module.exports.schemas = {
       },
       "method": {
         "type": "string",
-        "enum": ["GET","POST","PUT","OPTIONS"]
+        "enum": ["GET","POST","PUT","OPTIONS","DELETE"]
       },
       "path": {
         "type": "string",
