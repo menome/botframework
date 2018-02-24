@@ -91,6 +91,7 @@ module.exports = (function() {
       case 'POST': web.post(meta.path,func); break;
       case 'PUT': web.put(meta.path,func); break;
       case 'OPTIONS': web.options(meta.path,func); break;
+      case 'DELETE': web.delete(meta.path,func); break;
       default: bot.logger.error("Could not register operation.")
     }
     return bot.operations;
