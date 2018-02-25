@@ -54,6 +54,12 @@ module.exports.configSchema = {
     default: true,
     env: "LOGGING_ENABLED"
   },
+  urlprefix: {
+    doc: "If we want to prefix our bot endpoints. Eg. specifying '/api' would mean all your endpoints now reside at '/api/<thing>' instead of '/<thing>'",
+    format: "String",
+    default: "/a",
+    env: "BOT_URL_PREFIX"
+  },
   rabbit: {
     enable: {
       doc: "Whether or not to connect to RabbitMQ",

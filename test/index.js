@@ -48,7 +48,8 @@ describe('Main App', function () {
       logging: false,
       port: 2048,
       rabbit: {enable: true},
-      neo4j: {enable: true}
+      neo4j: {enable: true},
+      urlprefix: "/api"
     }
 
     // Configure the bot.
@@ -63,6 +64,7 @@ describe('Main App', function () {
     assert.equal(bot.config.port,thisConfig.port)
     assert.equal(bot.config.rabbit.enable,thisConfig.rabbit.enable)
     assert.equal(bot.config.neo4j.enable,thisConfig.neo4j.enable)
+    assert.equal(bot.config.urlprefix, thisConfig.urlprefix)
     assert.equal(bot.config.neo4j.url,'bolt://localhost') // To make sure we merged with defaults
   });
 
@@ -99,6 +101,17 @@ describe('Main App', function () {
     var operations = bot.registerEndpoint(endpointMeta, simple.stub())
     
     assert.oneOf(endpointMeta,operations);
+    assert.equal(endpointMeta.path, "/test") // Test that it puts us on the right path.
+  });
+
+  it('Can create a valid response message', function () {
+    var message = bot.responseWrapper({
+      status: "success",
+      message: "Sample Message",
+      otherKey: "Other key"
+    })
+
+    assert.containsAllKeys(message,['status','message','otherKey'])
   });
 
   it('Can create a valid response message', function () {

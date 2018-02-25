@@ -63,6 +63,18 @@ module.exports = (function() {
       bot.logger.info("Setting up Neo4j");
       neo4jClient = new neo4j(bot.config.neo4j);
     }
+
+    if(!bot.config.urlprefix) bot.config.urlprefix = "";
+
+    // All bots have the status endpoint. Register it here.
+    bot.registerEndpoint({
+      "name": "Status",
+      "path": "/status",
+      "method": "GET",
+      "desc": "Gets the bot's current status."
+    }, function(req,res,next) {
+      return res.json(state);
+    })
   }
 
   // Start the bot.
@@ -86,36 +98,28 @@ module.exports = (function() {
       return false;
     }
 
+    var prefixedPath = bot.config.urlprefix + meta.path;
+
     bot.operations.push(meta);
     switch(meta.method) {
-      case 'GET': web.get(meta.path,func); break;
-      case 'POST': web.post(meta.path,func); break;
-      case 'PUT': web.put(meta.path,func); break;
-      case 'OPTIONS': web.options(meta.path,func); break;
-      case 'DELETE': web.delete(meta.path,func); break;
+      case 'GET': web.get(prefixedPath,func); break;
+      case 'POST': web.post(prefixedPath,func); break;
+      case 'PUT': web.put(prefixedPath,func); break;
+      case 'OPTIONS': web.options(prefixedPath,func); break;
+      case 'DELETE': web.delete(prefixedPath,func); break;
       default: bot.logger.error("Could not register operation.")
     }
     return bot.operations;
   }
 
   // Send generic response for GET on '/'
-  web.get('/', function (req, res, next) {
+  web.get(bot.config.urlprefix+'/', function (req, res, next) {
     return res.json({
       name: bot.config.name,
       desc: bot.config.desc,
       operations: bot.operations
     });
   });
-
-  // All bots have the status endpoint. Register it here.
-  bot.registerEndpoint({
-    "name": "Status",
-    "path": "/status",
-    "method": "GET",
-    "desc": "Gets the bot's current status."
-  }, function(req,res,next) {
-    return res.json(state);
-  })
 
   bot.responseWrapper = function({status, message, ...args}) {
     if(!status) status = "success";
