@@ -75,6 +75,15 @@ module.exports = (function() {
     }, function(req,res,next) {
       return res.json(state);
     })
+
+    // Send generic response for GET on '/'
+    web.get(bot.config.urlprefix+'/', function (req, res, next) {
+      return res.json({
+        name: bot.config.name,
+        desc: bot.config.desc,
+        operations: bot.operations
+      });
+    });
   }
 
   // Start the bot.
@@ -111,15 +120,6 @@ module.exports = (function() {
     }
     return bot.operations;
   }
-
-  // Send generic response for GET on '/'
-  web.get(bot.config.urlprefix+'/', function (req, res, next) {
-    return res.json({
-      name: bot.config.name,
-      desc: bot.config.desc,
-      operations: bot.operations
-    });
-  });
 
   bot.responseWrapper = function({status, message, ...args}) {
     if(!status) status = "success";
