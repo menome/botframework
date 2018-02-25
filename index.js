@@ -31,6 +31,7 @@ module.exports = (function() {
     config: {},
     logger: logger,
     operations: [],
+    web,
     configSchema: config.configSchema, // Surface the convict configuration to bots.
     helpers: helpers // Helper functions. Because why not.
   };
