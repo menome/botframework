@@ -22,7 +22,7 @@ module.exports.schemas = {
     "$schema":"http://json-schema.org/draft-06/schema#",
     "title": "harvesterMessage",
     "type": "object",
-    "required": ["Name","NodeType","ConformedDimensions"],
+    "required": ["NodeType","ConformedDimensions"],
     "additionalProperties": false,
     "properties": {
       "Name": {
