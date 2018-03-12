@@ -120,10 +120,13 @@ module.exports.schemas = {
         "enum": ["GET","POST","PUT","OPTIONS","DELETE"]
       },
       "path": {
-        "type": "string",
+        "type": "string"
       },
       "desc": {
         "type": "string"
+      },
+      "body": {
+        "type": "boolean"
       },
       "params": {
         "type": "array",
