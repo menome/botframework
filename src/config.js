@@ -54,6 +54,12 @@ module.exports.configSchema = {
     default: true,
     env: "LOGGING_ENABLED"
   },
+  nickname: {
+    doc: "Nickname for this bot. If present, the Bot will advertise itself with this name. For differentiating multiple bots of the same type (eg. Multiple File crawlers.)",
+    format: "String",
+    default: "",
+    env: "BOT_NICKNAME"
+  },
   urlprefix: {
     doc: "If we want to prefix our bot endpoints. Eg. specifying '/api' would mean all your endpoints now reside at '/api/<thing>' instead of '/<thing>'",
     format: "String",

@@ -47,6 +47,7 @@ describe('Main App', function () {
     var thisConfig = {
       logging: false,
       port: 2048,
+      nickname: "My Nickname",
       rabbit: {enable: true},
       neo4j: {enable: true},
       urlprefix: "/api"
@@ -65,6 +66,7 @@ describe('Main App', function () {
     assert.equal(bot.config.rabbit.enable,thisConfig.rabbit.enable)
     assert.equal(bot.config.neo4j.enable,thisConfig.neo4j.enable)
     assert.equal(bot.config.urlprefix, thisConfig.urlprefix)
+    assert.equal(bot.config.nickname, thisConfig.nickname)
     assert.equal(bot.config.neo4j.url,'bolt://localhost') // To make sure we merged with defaults
   });
 

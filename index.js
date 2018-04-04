@@ -80,6 +80,7 @@ module.exports = (function() {
     web.get(bot.config.urlprefix+'/', function (req, res, next) {
       return res.json({
         name: bot.config.name,
+        nickname: bot.config.nickname || undefined,
         desc: bot.config.desc,
         operations: bot.operations
       });
