@@ -36,12 +36,15 @@ module.exports.mergeConf = function(conf) {
   var mergedConf = {};
   var rabbitConf = {};
   var neo4jConf = {};
+  var sslConf = {};
 
   Object.assign(rabbitConf, defaults.rabbit, conf.rabbit)
   Object.assign(neo4jConf, defaults.neo4j, conf.neo4j)
+  Object.assign(sslConf, defaults.ssl, conf.ssl)
   Object.assign(mergedConf, defaults, conf)
   mergedConf.rabbit = rabbitConf;
   mergedConf.neo4j = neo4jConf;
+  mergedConf.ssl = sslConf;
   return mergedConf;
 }
 
