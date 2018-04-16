@@ -10,6 +10,12 @@ var defaults = {
   desc: "Harvests from something",
   logging: true,
   port: 80,
+  ssl: {
+    enable: false,
+    certpath: "/srv/app/ssl/cert.pem",
+    keypath: "/srv/app/ssl/key.pem",
+    port: 443,
+  },
   rabbit: {
     enable: false,
     url: 'amqp://rabbitmq:rabbitmq@rabbit:5672?heartbeat=3600',
@@ -130,6 +136,32 @@ module.exports.configSchema = {
       default: "password",
       env: "NEO4J_PASS",
       sensitive: true
+    },
+  },
+  ssl: {
+    enable: {
+      doc: "Whether to server SSL",
+      format: "Boolean",
+      default: false,
+      env: "SSL_ENABLE"
+    },
+    certpath: {
+      doc: "Local filepath to the SSL cert to serve.",
+      format: "String",
+      default: "/srv/app/ssl/cert.pem",
+      env: "SSL_CERTPATH"
+    },
+    keypath: {
+      doc: "The local filepath to the SSL privatekey.",
+      format: "String",
+      default: "/srv/app/ssl/key.pem",
+      env: "SSL_KEYPATH"
+    },
+    port: {
+      doc: "The port to listen on for SSL.",
+      format: "port",
+      default: 443,
+      env: "SSL_PORT"
     },
   }
 }

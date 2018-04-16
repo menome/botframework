@@ -6,6 +6,7 @@
 "use strict";
 
 var http = require('http');
+var https = require('https');
 var express = require("express");
 var uuidV4 = require('uuid/v4');
 var logger = require('./src/logger');
@@ -15,6 +16,7 @@ var neo4j = require('./src/neo4j')
 var schema = require('./src/schema')
 var helpers = require('./src/helpers')
 var bodyParser = require('body-parser');
+var fs = require('fs');
 
 module.exports = (function() {
   // Private Variables
@@ -91,6 +93,13 @@ module.exports = (function() {
   bot.start = function() {
     http.createServer(web).listen(bot.config.port);
     bot.logger.info("Listening on port", bot.config.port)
+
+    // If we have SSL, use it.
+    if(bot.config.ssl.enable) {
+      var key = fs.readFileSync(bot.config.ssl.keypath);
+      var cert = fs.readFileSync(bot.config.ssl.certpath);
+      https.createServer({key,cert}, web).listen(bot.config.ssl.port)
+    }
 
     // RabbitMQ Config.
     if(bot.config.rabbit.enable) rabbitClient.connect();
