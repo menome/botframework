@@ -3,8 +3,8 @@ var mock = require('mock-require');
 var simple = require('simple-mock');
 var amqp = require('amqplib');
 mock('amqplib', amqp); // Mock the neo4j driver.
-var rabbit = require('../src/rabbit')
-var logger = require('../src/logger');
+var rabbit = require('../rabbitmq')
+var logger = require('../logger');
 logger.logging = false;
 
 describe('RabbitMQ', function () {

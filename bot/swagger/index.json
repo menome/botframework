@@ -1,0 +1,59 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "0.0.0",
+    "title": "theLink API"
+  },
+  "basePath": "/",
+  "consumes": [
+    "application/json",
+    "application/x-www-form-urlencoded"
+  ],
+  "produces": [
+    "application/json",
+    "text/html",
+    "text/plain"
+  ],
+  "paths": {
+    "/": {
+      "x-swagger-router-controller": "root",
+      "get": {
+        "summary": "Fetch bot's metadata",
+        "description": "Returns the bot's metadata, including name and description and other relevant details.",
+        "tags": [
+          "Bot"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": { }
+          },
+          "default": {
+            "description": "Error",
+            "schema": { }
+          }
+        }
+      }
+    },
+    "/status": {
+      "x-swagger-router-controller": "status",
+      "get": {
+        "summary": "Fetch bot's current status",
+        "description": "Bot's internal state.",
+        "tags": [
+          "Bot"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": { }
+          },
+          "default": {
+            "description": "Error",
+            "schema": { }
+          }
+        }
+      }
+    }
+  }
+}

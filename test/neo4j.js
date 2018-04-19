@@ -10,7 +10,7 @@ describe('Neo4j', function () {
   before(() => {
     mock.stopAll()
     mock('neo4j-driver', neo4jdriver); // Mock the neo4j driver.mock.stopAll()
-    neo4j = require('../src/neo4j')
+    neo4j = require('../neo4j')
   })
   after(()=>{mock.stopAll()})
   afterEach(function() {

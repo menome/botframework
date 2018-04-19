@@ -1,5 +1,5 @@
 var assert = require('chai').assert;
-var helpers = require('../src/helpers');
+var helpers = require('../helpers');
 
 describe('ParseProps', function () {
   it('Parses Properties', function () {
@@ -46,4 +46,32 @@ describe('convertDate', function () {
       assert.equal(helpers.convertDate(itm.val),itm.timestamp)
     })
   });
+
+  it('Can create a valid response message', function () {
+    var message = helpers.responseWrapper({
+      status: "success",
+      message: "Sample Message",
+      otherKey: "Other key"
+    })
+
+    assert.containsAllKeys(message,['status','message','otherKey'])
+  });
+
+  it('Can create a valid response message', function () {
+    var message = helpers.responseWrapper({
+      status: "success",
+      message: "Sample Message",
+      otherKey: "Other key"
+    })
+
+    assert.containsAllKeys(message,['status','message','otherKey'])
+  });
+
+  it('Can not create an invalid response message', function () {
+    assert.throws(helpers.responseWrapper.bind({
+      message: "Sample Message",
+      otherKey: "Other key"
+    }), Error)
+  });
 });
+

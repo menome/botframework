@@ -5,8 +5,8 @@
  */
 "use strict";
 var amqp = require('amqplib');
-var log = require('./logger');
-var schema = require('./schema');
+var log = require('../logger');
+var schema = require('../helpers/schema');
 
 // Constructor for Rabbit interface.
 module.exports = function(config) {

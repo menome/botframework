@@ -4,53 +4,52 @@
  * Merges the external config file with environment variables and default config values.
  */
 "use strict";
+const convict = require('convict')
 
-var defaults = {
-  name: "Unconfigured Harvester",
-  desc: "Harvests from something",
-  logging: true,
-  port: 80,
-  ssl: {
-    enable: false,
-    certpath: "/srv/app/ssl/cert.pem",
-    keypath: "/srv/app/ssl/key.pem",
-    port: 443,
-  },
-  rabbit: {
-    enable: false,
-    url: 'amqp://rabbitmq:rabbitmq@rabbit:5672?heartbeat=3600',
-    routingKey: 'syncevents.harvester.updates.example',
-    exchange: 'syncevents',
-    exchangeType: 'topic'
-  },
-  neo4j: {
-    enable: false,
-    url: "bolt://localhost",
-    user: "neo4j",
-    pass: "password"
-  }
+/**
+ * Merges the provided schema with the base bot schema.
+ * Warning: It's a shallow copy.
+ * 
+ * @param {} mergeSchema Provided schema.
+ */
+module.exports.mergeSchema = function(schema) {
+  return Object.assign({},module.exports.botSchema, schema);
 }
 
-// Merged external conf and default conf, prioritizing external conf.
-module.exports.mergeConf = function(conf) {
-  var mergedConf = {};
-  var rabbitConf = {};
-  var neo4jConf = {};
-  var sslConf = {};
-
-  Object.assign(rabbitConf, defaults.rabbit, conf.rabbit)
-  Object.assign(neo4jConf, defaults.neo4j, conf.neo4j)
-  Object.assign(sslConf, defaults.ssl, conf.ssl)
-  Object.assign(mergedConf, defaults, conf)
-  mergedConf.rabbit = rabbitConf;
-  mergedConf.neo4j = neo4jConf;
-  mergedConf.ssl = sslConf;
-  return mergedConf;
+/**
+ * Loads config. Returns a convict object with the desegnated schema and values.
+ * 
+ * @param {} config The configuration values
+ * @param {} schema The schema we're configuring.
+ */
+module.exports.loadConfig = function(config, schema) {
+  var convictConfig = convict(schema);
+  convictConfig.load(config);
+  convictConfig.validate();
+  return convictConfig;
 }
 
 // Config schema for use with mozilla convict.
 // This isn't required. It's just to make the bot's lives easier.
-module.exports.configSchema = {
+module.exports.botSchema = {
+  name: {
+    doc: "Name of this bot. Should represent the bot's type. Eg. 'webDAVScraper'",
+    format: "String",
+    default: "Unconfigured bot.",
+    env: "BOT_NAME"
+  },
+  desc: {
+    doc: "Explanation of what this bot does.",
+    format: "String",
+    default: "No Description",
+    env: "BOT_DESC"
+  },
+  nickname: {
+    doc: "Nickname for this bot. If present, the Bot will advertise itself with this name. For differentiating multiple bots of the same type (eg. Multiple File crawlers.)",
+    format: "String",
+    default: "",
+    env: "BOT_NICKNAME"
+  },
   port: {
     doc: "The port to listen on.",
     format: "port",
@@ -63,16 +62,10 @@ module.exports.configSchema = {
     default: true,
     env: "LOGGING_ENABLED"
   },
-  nickname: {
-    doc: "Nickname for this bot. If present, the Bot will advertise itself with this name. For differentiating multiple bots of the same type (eg. Multiple File crawlers.)",
-    format: "String",
-    default: "",
-    env: "BOT_NICKNAME"
-  },
   urlprefix: {
     doc: "If we want to prefix our bot endpoints. Eg. specifying '/api' would mean all your endpoints now reside at '/api/<thing>' instead of '/<thing>'",
     format: "String",
-    default: "/a",
+    default: "/",
     env: "BOT_URL_PREFIX"
   },
   rabbit: {

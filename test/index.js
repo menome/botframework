@@ -18,6 +18,7 @@ describe('Main App', function () {
       connect: connectStub
     }
   });
+  var Bot;
   var bot;
   var listenStub;
 
@@ -32,7 +33,7 @@ describe('Main App', function () {
     mock('http', httpMock);
     mock('../src/neo4j', neo4jMock);
     mock('../src/rabbit', rabbitMock);
-    bot = require('../index');
+    Bot = require('../index');
   })
 
   after(()=>{
@@ -54,20 +55,16 @@ describe('Main App', function () {
     }
 
     // Configure the bot.
-    bot.configure(thisConfig)
-    
-    // Ensure we've initialized the components we enabled.
-    assert.equal(neo4jMock.callCount,1)
-    assert.equal(rabbitMock.callCount,1)
+    bot = new Bot({config: thisConfig})
 
     // Check merged config.
-    assert.equal(bot.config.logging,thisConfig.logging)
-    assert.equal(bot.config.port,thisConfig.port)
-    assert.equal(bot.config.rabbit.enable,thisConfig.rabbit.enable)
-    assert.equal(bot.config.neo4j.enable,thisConfig.neo4j.enable)
-    assert.equal(bot.config.urlprefix, thisConfig.urlprefix)
-    assert.equal(bot.config.nickname, thisConfig.nickname)
-    assert.equal(bot.config.neo4j.url,'bolt://localhost') // To make sure we merged with defaults
+    assert.equal(bot.config.get('logging'),thisConfig.logging)
+    assert.equal(bot.config.get('port'),thisConfig.port)
+    assert.equal(bot.config.get('rabbit').enable,thisConfig.rabbit.enable)
+    assert.equal(bot.config.get('neo4j').enable,thisConfig.neo4j.enable)
+    assert.equal(bot.config.get('urlprefix'), thisConfig.urlprefix)
+    assert.equal(bot.config.get('nickname'), thisConfig.nickname)
+    assert.equal(bot.config.get('neo4j.url'),'bolt://localhost') // To make sure we merged with defaults
   });
 
   it('Can Change Bot State to valid state', function () {
@@ -92,56 +89,12 @@ describe('Main App', function () {
     assert.equal(newState,false);
   });
 
-  it('Can register a new endpoint', function () {
-    // Configure the bot.
-    var endpointMeta = {
-      "name": "Test",
-      "path": "/test",
-      "method": "GET",
-      "desc": "Test Endpoint."
-    }
-    var operations = bot.registerEndpoint(endpointMeta, simple.stub())
-    
-    assert.oneOf(endpointMeta,operations);
-    assert.equal(endpointMeta.path, "/test") // Test that it puts us on the right path.
-  });
-
-  it('Can create a valid response message', function () {
-    var message = bot.responseWrapper({
-      status: "success",
-      message: "Sample Message",
-      otherKey: "Other key"
-    })
-
-    assert.containsAllKeys(message,['status','message','otherKey'])
-  });
-
-  it('Can create a valid response message', function () {
-    var message = bot.responseWrapper({
-      status: "success",
-      message: "Sample Message",
-      otherKey: "Other key"
-    })
-
-    assert.containsAllKeys(message,['status','message','otherKey'])
-  });
-
-  it('Can not create an invalid response message', function () {
-    assert.throws(bot.responseWrapper.bind({
-      message: "Sample Message",
-      otherKey: "Other key"
-    }), Error)
-  });
-
   it('Bot Starts', function () {
     // Configure the bot.
     bot.start();
     
     // Have we started the webserver?
-    assert.equal(httpMock.createServer.callCount,1)
-    assert.equal(listenStub.callCount,1)
-
-    // Have we started listening to Rabbit?
-    assert.equal(rabbitMock().connect.callCount,1)
+    assert.equal(httpMock.createServer.callCount,1);
+    assert.equal(listenStub.callCount,1);
   });
 });
