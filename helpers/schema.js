@@ -53,7 +53,8 @@ module.exports.schemas = {
       "DeleteProperties": { // Properties listed here will be deleted from the nodes.
         "type": "array",
         "items": {
-          "type": "string"
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_\\s\.\'&]*$"
         }
       },
       "Connections": { // Basically an array of the same things, minus second-level connections
@@ -91,7 +92,8 @@ module.exports.schemas = {
             "DeleteProperties": { // Properties listed here will be deleted from the nodes.
               "type": "array",
               "items": {
-                "type": "string"
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9_\\s\.\'&]*$"
               }
             },
             "RelProps": {
