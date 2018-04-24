@@ -26,10 +26,6 @@ var swaggerObject = require('./swagger/index.json');
  * @param {*} schema Convict Schema. Merge this with base bot config.
  */
 module.exports = function({config, configSchema}) {
-  // Private vars
-  var rabbitClient = {}
-  var neo4jClient = {}
-
   // Public vars
   this.web = express()
   this.state = { status: "initializing" }
@@ -38,6 +34,15 @@ module.exports = function({config, configSchema}) {
   this.logger = logger
   this.logger.logging = this.config.get('logging');
 
+  // Some internal objects or whatever.
+  this.genUuid = uuidV4;
+  if(this.config.get('neo4j').enable)
+    this.neo4j = new neo4j(this.config.get('neo4j'));
+  if(this.config.get('rabbit').enable) {
+    this.rabbit = new rabbit(this.config.get('rabbit'));
+    this.rabbit.connect();
+  }
+    
   ////////////////
   // Swagger Stuff
   var swaggerConfig = {

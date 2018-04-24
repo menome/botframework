@@ -47,6 +47,15 @@ module.exports.schemas = {
       "Properties": {
         "type": "object"
       },
+      "DeleteNode": { // If true, just finds this node based on conformed dimensions and detach-deletes it.
+        "type": "boolean"
+      },
+      "DeleteProperties": { // Properties listed here will be deleted from the nodes.
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
       "Connections": { // Basically an array of the same things, minus second-level connections
         "type": "array",
         "items": {
@@ -79,8 +88,20 @@ module.exports.schemas = {
             "Properties": {
               "type": "object"
             },
+            "DeleteProperties": { // Properties listed here will be deleted from the nodes.
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
             "RelProps": {
               "type": "object"
+            },
+            "DeleteRelationship": { // If true, just deletes this relationship if it exists.
+              "type": "boolean"
+            },
+            "DeleteNode": { // If true, just finds this node based on conformed dimensions and detach-deletes it.
+              "type": "boolean"
             }
           }
         }
