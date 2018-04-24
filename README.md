@@ -1,14 +1,16 @@
 # Menome Bot Framework
 
 [View the full API Doc here](./API.md)
+
 [View an example bot here](https://github.com/menome/harvesterTemplate)
-[View the schemas here](./src/schema.js)
+
+[View the schemas here](./helpers/schema.js)
 
 This package contains a common framework for all bots that integrate with theLink or the Menome stack.
 
 Bots commonly have the following functionality:
 * Can Connect to RabbitMQ and send + receive messages with routing keys.
-* Be able to connect to and run queries on the graph.
+* Be able to connect to and run queries on the Neo4j graph.
 * Can describe themselves, their functionality, and their state via API calls.
   * eg. A harvester bot should be able to tell us, via REST calls, that it has a /sync endpoint, or that performing a GET on /status gives the progress of the current sync job.
 
@@ -16,9 +18,10 @@ Bots commonly have the following functionality:
 To use the framework, just follow these steps:
 
 1. Import the framework
-2. Configure with `bot.configure()` [(See Below)](#configuration)
-3. Register web endpoints. [(See Below)](#register-web-endpoints)
+2. Instantiate a bot. (Use `var bot = new Bot({config, configSchema})`) [(See Below)](#configuration)
+3. Configure Swagger Endpoints [(See Below)](#register-web-endpoints)
 4. Start the bot by calling `bot.start()`
+5. Set the bot's initial state with `bot.changeState({state: "idle"})`
 
 For a complete list of functions that you can utilize, see the [API Docs](./API.md)
 
@@ -27,8 +30,10 @@ For a complete list of functions that you can utilize, see the [API Docs](./API.
 Configuration is specified in the following structure: (Default values shown)
 ```json
 {
-  "name": "Unconfigured Harvester",
+  "name": "SQL Harvester",
   "desc": "Harvests from something",
+  "nickname": "World Database Harvester",
+  "urlprefix": "/",
   "logging": true,
   "port": 80,
   "rabbit": {
@@ -43,56 +48,87 @@ Configuration is specified in the following structure: (Default values shown)
     "url": "bolt://localhost",
     "user": "neo4j",
     "pass": "password"
+  },
+  "ssl": {
+    "enable": false,
+    "certpath": "/srv/app/ssl/cert.pem",
+    "keypath": "/srv/app/ssl/key.pem",
+    "port": 443
   }
 }
 ```
 
-To initialize the bot framework, call `bot.configure()` with a config structure similar to the one above as an argument. It will be merged with the default config where values are omitted. Alternatively the bot surfaces a built in schema for configuration via [Mozilla Convict](https://github.com/mozilla/node-convict). 
+Configuration is handled through [Mozilla Convict](https://github.com/mozilla/node-convict). For more information on our baseline config structure, see [the config schema](./bot/config.js).
 
-Here's an example of a configuration using convict. It grabs the config schemas from the bot framework, and adds an additional config parameter for use in the bot itself.
+When creating a new bot, call the constructor and supply an object like the one above as a config parameter. 
+
+Additionally, you can specify a `configSchema`. This will be merged in with the default bot schema for when you want to supply your own configuration parameters.
+
+For example, this would set up a new bot with some custom config parameters.
+
 ```javascript
-var convict = require('convict');
-var bot = require('menome-botframework')
+var bot = require('@menome/botframework')
 
-// Define a schema
-var config = convict({
+var config = {
+  name: "JSON Placeholder Bot",
+  desc: "Harvests data from JSON placeholder.",
+  nickname: "Jerry",
+  // (Add some additional config params for rabbit, neo4j, ports in use, etc)
+}
+
+var configSchema = {
   url: {
     doc: "The URL of the REST Endpoint we're grabbing",
     format: "url",
     default: "https://jsonplaceholder.typicode.com",
     env: "API_URL"
-  },
-  port: bot.configSchema.port,
-  logging: bot.configSchema.logging,
-  neo4j: bot.configSchema.neo4j,
-  rabbit: bot.configSchema.rabbit,
-});
-config.validate({allowed: 'strict'});
+  }
+}
 
-bot.configure({
-  name: "JsonPlaceholder harvester",
-  desc: "Harvests from JSON Placeholder",
-  logging: config.get('logging'),
-  port: config.get('port'),
-  rabbit: config.get('rabbit'),
-  neo4j: config.get('neo4j')
-})
+var bot = new Bot({ config, configSchema });
 ```
 
 ## Register Web Endpoints
 
-By default, bots support two methods: `GET /` and `GET /status`. The former gives a description of the bot and all its registered endpoints. The latter gets the current state of the bot. (Whether it's idle, processing with some measure of progress, or in a failed state.)
+The Bot Framework is built to be OpenAPI compliant. Navigate to the `[bot address]/docs` to view the bot's OpenAPI spec through the swagger UI
 
-For the bot to actually do work, we need to add an endpoint to listen on. We can add an endpoint like so:
+To register additional endpoints, you must call `bot.registerPaths(paths, controllersDir);`.
+
+An easy way to sed this up is to have a subdirectory called 'controllers' in which you put your controllers and their swagger stubs. A file in this directory might look like this:
 
 ```javascript
-bot.registerEndpoint({
-  "name": "Synchronize",
-  "path": "/sync",
-  "method": "POST",
-  "desc": "Starts a full synchronization from the source system."
-}, function(req,res) {
-  res.send("Starting the Harvest")
-  // Run some sync logic.
-})
+// controllertest.js
+module.exports.swaggerDef = {
+  "/ping": {
+    "x-swagger-router-controller": "controllertest",
+    "get": {
+      "tags": [
+        "JSONPlaceholder"
+      ],
+      "responses": {
+        "200": { "description": "Success" },
+        "default": { "description": "Error" }
+      }
+    }
+  }
+}
+
+module.exports.get = function(req,res) {
+  return res.send({message: "Pong!"});
+}
 ```
+
+To load these and register them with the bot, you can do something like this:
+
+```javascript
+// Loader for controllers
+var paths = { }
+var normalizedPath = path.join(__dirname, "controllers");
+fs.readdirSync(normalizedPath).forEach(function(file) {
+  paths = Object.assign(paths,require("./controllers/" + file).swaggerDef);
+});
+
+bot.registerPaths(paths, __dirname+"/controllers")
+```
+
+For more information on OpenAPI and Swagger, read their documentation [here](https://swagger.io/specification/).

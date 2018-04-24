@@ -89,7 +89,7 @@ module.exports.schemas = {
             "Properties": {
               "type": "object"
             },
-            "DeleteProperties": { // Properties listed here will be deleted from the nodes.
+            "DeleteProperties": { // Properties listed here will be deleted from the node.
               "type": "array",
               "items": {
                 "type": "string",
@@ -98,6 +98,13 @@ module.exports.schemas = {
             },
             "RelProps": {
               "type": "object"
+            },
+            "DeleteRelProps": { // Properties listed here will be deleted from the relationship.
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9_\\s\.\'&]*$"
+              }
             },
             "DeleteRelationship": { // If true, just deletes this relationship if it exists.
               "type": "boolean"
