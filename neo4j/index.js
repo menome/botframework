@@ -32,6 +32,40 @@ module.exports = function(config) {
       });
   };
 
+  // Runs multiple DB queries in a single session.
+  // The callback will give the first error, or a list of all the results.
+  // The queries are executed sequentially, not in parallel.
+  this.batchQuery = function(queryStrList, queryParamsList, cb) {
+    var session = driver.session();
+    var resultList = [];
+    var listIdx = 0;
+
+    var runNext = () => {
+      return session.run(queryStrList[listIdx], queryParamsList[listIdx])
+        .then(callbackNext).catch((err) => {
+          session.close();
+          if(!!cb) return cb(err, null);
+          return Promise.reject(err);
+        });
+    }
+    
+    // When we successfully execute a query, execute the next.  
+    var callbackNext = function(result) {
+      resultList.push(result);
+      listIdx += 1;
+      if (listIdx >= queryStrList.length) {
+        session.close();
+        if(!!cb) return cb(null, resultList);
+        return resultList;
+      }
+      else {
+        return runNext();
+      }
+    }
+
+    return runNext();
+  };
+
   this.closeDriver = function() {
     if(driver) driver.close();
     driver = undefined;
