@@ -84,6 +84,7 @@ module.exports = function({config, configSchema}) {
     swagger.initializeMiddleware(swaggerObject, function(middleware) {
       this.web.use((req,res,next) => {
         req.bot = this;
+        req.swaggerObject = swaggerObject;
         next();
       });
 

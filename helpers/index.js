@@ -26,6 +26,29 @@ module.exports.parseProps = function(row, excludeCols) {
   return retVal;
 }
 
+// Returns a backwards compatible endpoint structure from the swagger def.
+// Deprecate this when the controller bot is rewritten to consume swagger.
+module.exports.transformSwagger = function(swaggerDef) {
+  var paths = [];
+  Object.keys(swaggerDef.paths).forEach((path) => {
+    var pathdefs = swaggerDef.paths[path];
+    Object.keys(pathdefs).forEach((operation) => {
+      var opBody = pathdefs[operation];
+      if(['get','post','delete','options','put'].indexOf(operation) === -1) return;
+
+      paths.push({
+        name: opBody.summary || path,
+        path: path,
+        desc: opBody.description || "No Description",
+        params: opBody.parameters ? opBody.parameters.map((param) => {
+          return {name: param.name, desc: param.description}
+        }) : undefined
+      })
+    })
+  })
+  return paths
+}
+
 // This attempts to convert values into epoch time dates.
 // Input: A string.
 // Output: A UNIX epoch date. Or the input string if conversion failed.
