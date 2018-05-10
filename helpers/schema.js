@@ -38,7 +38,7 @@ module.exports.schemas = {
       },
       "SourceSystem": {
         "type": "string",
-        "pattern": "^[a-zA-Z0-9_\\s\.\'&]*$"
+        "pattern": "^[a-zA-Z0-9_\\s.'&]*$"
       },
       "ConformedDimensions": {
         "type": "object",
@@ -54,7 +54,7 @@ module.exports.schemas = {
         "type": "array",
         "items": {
           "type": "string",
-          "pattern": "^[a-zA-Z0-9_\\s\.\'&]*$"
+          "pattern": "^[a-zA-Z0-9_\\s.'&]*$"
         }
       },
       "Connections": { // Basically an array of the same things, minus second-level connections
@@ -93,7 +93,7 @@ module.exports.schemas = {
               "type": "array",
               "items": {
                 "type": "string",
-                "pattern": "^[a-zA-Z0-9_\\s\.\'&]*$"
+                "pattern": "^[a-zA-Z0-9_\\s.'&]*$"
               }
             },
             "RelProps": {
@@ -103,7 +103,7 @@ module.exports.schemas = {
               "type": "array",
               "items": {
                 "type": "string",
-                "pattern": "^[a-zA-Z0-9_\\s\.\'&]*$"
+                "pattern": "^[a-zA-Z0-9_\\s.'&]*$"
               }
             },
             "DeleteRelationship": { // If true, just deletes this relationship if it exists.

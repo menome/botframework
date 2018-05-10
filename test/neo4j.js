@@ -20,7 +20,7 @@ describe('Neo4j', function () {
   it('Creates Driver', function () {
     simple.mock(neo4jdriver.v1, 'driver');
     
-    var neo4jClient = new neo4j({
+    new neo4j({
       url: "bolt://localhost",
       user: "neo4j",
       pass: "password"

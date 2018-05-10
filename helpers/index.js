@@ -4,6 +4,8 @@
  * Helper functions for bots.
  */
 "use strict";
+const path = require("path");
+const fs = require("fs");
 
 /**
  * Saves us time explicitly mapping columns to node properties.
@@ -24,6 +26,23 @@ module.exports.parseProps = function(row, excludeCols) {
   }
 
   return retVal;
+}
+
+/**
+ * Get Swagger Paths from a directory full of controller modules.
+ * 
+ * @param {string} pathDir Absolute path of the directory in which we find controller modules.
+ * @returns JSON object of Swagger Paths.
+ */
+module.exports.getSwaggerPaths = function(pathDir) {
+  var swaggerPaths = { }
+
+  // Loader. So we don't have to individually require each file.
+  fs.readdirSync(pathDir).forEach(function(file) {
+    swaggerPaths = Object.assign(swaggerPaths,require(path.join(pathDir, file)).swaggerDef)
+  });
+
+  return swaggerPaths;
 }
 
 // Returns a backwards compatible endpoint structure from the swagger def.

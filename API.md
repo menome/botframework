@@ -23,7 +23,7 @@ bot.start()
 ```
 
 ### bot.changeState(newState)
-
+**deprecated**
 All bots have a standard way of describing their state. It is up to the programmer to manage the state of their bot.
 
 Valid states are: 'idle','initializing','working','failed' The application's state also optionally allows for a message and a percentage progress indicator.
@@ -38,7 +38,7 @@ bot.changeState({state: 'failed', message: "Database is unreachable"});
 bot.changeState({state: 'idle'});
 ```
 
-## bot.registerPaths(paths,controllerDir)
+### bot.registerPaths(paths,controllerDir)
 
 Configures the bot with additional swagger/openAPI defined endpoints.
 
@@ -49,6 +49,18 @@ Configures the bot with additional swagger/openAPI defined endpoints.
 **Example**
 ```javascript
 bot.registerPaths(paths,__dirname+'/controllers')
+```
+
+### bot.registerControllers(controllerDir)
+
+Configures the bot with additional swagger/openAPI defined endpoints. Easier than the above.
+
+**Parameters**
+* controllerDir: String. Absolute path to a directory in which to look for swagger controllers.
+
+**Example**
+```javascript
+bot.registerControllers(__dirname+'/controllers')
 ```
 
 ## Class: Logger()

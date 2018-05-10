@@ -77,6 +77,18 @@ module.exports = function({config, configSchema}) {
     swaggerConfig.controllers.push(controllerDir);
     Object.assign(swaggerObject.paths, paths);
   }
+
+  /**
+   * Register swagger endpoints.
+   * 
+   * controllerDir is a string directory where we will find swagger controllers.
+   * These controllers should all have a 'swaggerDef' export.
+   */
+  this.registerControllers = function(controllerDir) {
+    var paths = helpers.getSwaggerPaths(controllerDir)
+    swaggerConfig.controllers.push(controllerDir);
+    Object.assign(swaggerObject.paths, paths);
+  }
   
   // Start the webserver.
   this.start = function() {

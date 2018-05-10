@@ -68,7 +68,7 @@ module.exports = function(config) {
         return channel.assertExchange(config.exchange, config.exchangeType, {durable: true});
       })
       // When we're connected, register all our listeners/handlers.
-      .then((exchange) => {
+      .then(() => {
         handlers.forEach(({handler,queueName,schemaName}) => {
           return rabbitChannel.assertQueue(queueName, {durable: true})
             .then(function(q) {

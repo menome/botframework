@@ -121,14 +121,10 @@ module.exports.get = function(req,res) {
 To load these and register them with the bot, you can do something like this:
 
 ```javascript
-// Loader for controllers
-var paths = { }
-var normalizedPath = path.join(__dirname, "controllers");
-fs.readdirSync(normalizedPath).forEach(function(file) {
-  paths = Object.assign(paths,require("./controllers/" + file).swaggerDef);
-});
+var path = require('path');
 
-bot.registerPaths(paths, __dirname+"/controllers")
+bot.registerControllers(path.join(__dirname,"./controllers"));
+bot.start())
 ```
 
 For more information on OpenAPI and Swagger, read their documentation [here](https://swagger.io/specification/).

@@ -22,12 +22,12 @@ module.exports = function(config) {
       .run(queryStr, queryParams)
       .then(function(result) {
         session.close();
-        if(!!cb) cb(null, result);
+        if(cb) cb(null, result);
         return result;
       })
       .catch(function(err) {
         session.close();
-        if(!!cb) cb(err, null);
+        if(cb) cb(err, null);
         throw err;
       });
   };
@@ -44,7 +44,7 @@ module.exports = function(config) {
       return session.run(queryStrList[listIdx], queryParamsList[listIdx])
         .then(callbackNext).catch((err) => {
           session.close();
-          if(!!cb) return cb(err, null);
+          if(cb) return cb(err, null);
           return Promise.reject(err);
         });
     }
@@ -55,7 +55,7 @@ module.exports = function(config) {
       listIdx += 1;
       if (listIdx >= queryStrList.length) {
         session.close();
-        if(!!cb) return cb(null, resultList);
+        if(cb) return cb(null, resultList);
         return resultList;
       }
       else {
