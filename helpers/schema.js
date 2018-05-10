@@ -19,7 +19,6 @@ module.exports.validate = function(schema, data) {
 
 module.exports.schemas = {
   harvesterMessage: {
-    "$schema":"http://json-schema.org/draft-06/schema#",
     "title": "harvesterMessage",
     "type": "object",
     "required": ["NodeType","ConformedDimensions"],
@@ -122,7 +121,6 @@ module.exports.schemas = {
     }
   },
   botState: {
-    "$schema":"http://json-schema.org/draft-06/schema#",
     "required": ["state"],
     "additionalProperties": false,
     "properties": {
@@ -139,7 +137,6 @@ module.exports.schemas = {
     }
   },
   endpointMetadata: {
-    "$schema":"http://json-schema.org/draft-06/schema#",
     "required": ["name","path","method","desc"],
     "properties": {
       "name": {
