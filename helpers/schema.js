@@ -46,6 +46,13 @@ module.exports.schemas = {
       "Properties": {
         "type": "object"
       },
+      "DateProperties": { // These get added to the main node, but we first try to parse them as neo4j DateTime objects.
+        "type": "object",
+        "additionalProperties": {
+          "type": "string", // They should be in ISO8601 string format.
+          "pattern": "^(\\d{4}-[01]\\d-[0-3]\\dT[0-2]\\d:[0-5]\\d:[0-5]\\d\\.\\d+([+-][0-2]\\d:[0-5]\\d|Z))|(\\d{4}-[01]\\d-[0-3]\\dT[0-2]\\d:[0-5]\\d:[0-5]\\d([+-][0-2]\\d:[0-5]\\d|Z))|(\\d{4}-[01]\\d-[0-3]\\dT[0-2]\\d:[0-5]\\d([+-][0-2]\\d:[0-5]\\d|Z))$"
+        }
+      },
       "DeleteNode": { // If true, just finds this node based on conformed dimensions and detach-deletes it.
         "type": "boolean"
       },
@@ -88,6 +95,13 @@ module.exports.schemas = {
             "Properties": {
               "type": "object"
             },
+            "DateProperties": { // These get added to the main node, but we first try to parse them as neo4j DateTime objects.
+              "type": "object",
+              "additionalProperties": {
+                "type": "string", // They should be in ISO8601 string format.
+                "pattern": "^(\\d{4}-[01]\\d-[0-3]\\dT[0-2]\\d:[0-5]\\d:[0-5]\\d\\.\\d+([+-][0-2]\\d:[0-5]\\d|Z))|(\\d{4}-[01]\\d-[0-3]\\dT[0-2]\\d:[0-5]\\d:[0-5]\\d([+-][0-2]\\d:[0-5]\\d|Z))|(\\d{4}-[01]\\d-[0-3]\\dT[0-2]\\d:[0-5]\\d([+-][0-2]\\d:[0-5]\\d|Z))$"
+              }
+            },
             "DeleteProperties": { // Properties listed here will be deleted from the node.
               "type": "array",
               "items": {
@@ -97,6 +111,13 @@ module.exports.schemas = {
             },
             "RelProps": {
               "type": "object"
+            },
+            "DateRelProps": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string", // These should be in ISO8601 string format.
+                "pattern": "^(\\d{4}-[01]\\d-[0-3]\\dT[0-2]\\d:[0-5]\\d:[0-5]\\d\\.\\d+([+-][0-2]\\d:[0-5]\\d|Z))|(\\d{4}-[01]\\d-[0-3]\\dT[0-2]\\d:[0-5]\\d:[0-5]\\d([+-][0-2]\\d:[0-5]\\d|Z))|(\\d{4}-[01]\\d-[0-3]\\dT[0-2]\\d:[0-5]\\d([+-][0-2]\\d:[0-5]\\d|Z))$"
+              }
             },
             "DeleteRelProps": { // Properties listed here will be deleted from the relationship.
               "type": "array",
