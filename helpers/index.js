@@ -70,14 +70,13 @@ module.exports.transformSwagger = function(swaggerDef) {
 
 // This attempts to convert values into epoch time dates.
 // Input: A string.
-// Output: A UNIX epoch date. Or the input string if conversion failed.
+// Output: An ISO8601 Date, or the input if it can't parse the value as a date.
 module.exports.convertDate = function(date) {
-  if(date instanceof Date) return date.getTime();
+  if(date instanceof Date) return date.toISOString();
   if(typeof date !== 'string') return date;
-  if(!isNaN(Number(date))) return date; // If it's just a number don't try to parse as a date.
-
+  
   var parsed = Date.parse(date);
-  if(isNaN(parsed) === false) return parsed;
+  if(isNaN(parsed) === false) return new Date(date).toISOString();
   else return date;
 }
 
