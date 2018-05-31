@@ -5,10 +5,6 @@
     "title": "theLink API"
   },
   "basePath": "/",
-  "consumes": [
-    "application/json",
-    "application/x-www-form-urlencoded"
-  ],
   "produces": [
     "application/json",
     "text/html",
