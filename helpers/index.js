@@ -59,6 +59,7 @@ module.exports.transformSwagger = function(swaggerDef) {
         name: opBody.summary || path,
         path: path,
         desc: opBody.description || "No Description",
+        method: operation.toUpperCase(),
         params: opBody.parameters ? opBody.parameters.map((param) => {
           return {name: param.name, desc: param.description}
         }) : undefined
