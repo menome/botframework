@@ -68,6 +68,8 @@ describe('convertDate', function () {
       {val: "10/15/2008 10:06:32 PM", timestamp: "2008-10-16T04:06:32.000Z" },
       {val: "2015-03-25 12:00:00.00", timestamp: "2015-03-25T18:00:00.000Z" },
       {val: "7/7/2011", timestamp: "2011-07-07T06:00:00.000Z" },
+      {val: "2011/05/03", timestamp: "2011-05-03T06:00:00.000Z" },
+      {val: "2011.05.03", timestamp: "2011-05-03T06:00:00.000Z" },
     ]
 
     dates.forEach((itm) => {

@@ -73,6 +73,7 @@ module.exports.transformSwagger = function(swaggerDef) {
 // Input: A string.
 // Output: An ISO8601 Date, or the input if it can't parse the value as a date.
 module.exports.convertDate = function(date) {
+  if(date === null) return undefined;
   if(date instanceof Date) return date.toISOString();
   if(typeof date !== 'string') return date;
   
