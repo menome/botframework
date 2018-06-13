@@ -18,6 +18,47 @@ module.exports.validate = function(schema, data) {
 }
 
 module.exports.schemas = {
+  crawlerMessage: { // Crawler events should be in this format.
+    "title": "crawlerMessage",
+    "type": "object",
+    "required": ["Library","Path"],
+    "additionalProperties": false,
+    "properties": {
+      "Library": {
+        "type": "string"
+      },
+      "Path": {
+        "type": "string",
+      },
+      "EventType": {
+        "type": "string",
+        "enum": ["CREATE","DELETE","UPDATE"]
+      },
+      "Timestamp": {
+        "type": "string"
+      }
+    }
+  },
+  fileProcessingMessage: { // Crawler events should be in this format.
+    "title": "fileProcessingMessage",
+    "type": "object",
+    "required": ["Library","Path","Uuid"],
+    "additionalProperties": false,
+    "properties": {
+      "Library": {
+        "type": "string"
+      },
+      "Path": {
+        "type": "string",
+      },
+      "Uuid": {
+        "type": "string",
+      },
+      "Timestamp": {
+        "type": "string"
+      }
+    }
+  },
   harvesterMessage: {
     "title": "harvesterMessage",
     "type": "object",
