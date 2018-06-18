@@ -56,6 +56,9 @@ module.exports.schemas = {
       },
       "Timestamp": {
         "type": "string"
+      },
+      "Mime": {
+        "type": "string"
       }
     }
   },
