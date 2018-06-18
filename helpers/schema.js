@@ -22,7 +22,7 @@ module.exports.schemas = {
     "title": "crawlerMessage",
     "type": "object",
     "required": ["Library","Path"],
-    "additionalProperties": false,
+    "additionalProperties": true,
     "properties": {
       "Library": {
         "type": "string"

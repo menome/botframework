@@ -11,9 +11,10 @@ var uuidV4 = require('uuid/v4');
 var logger = require('../logger');
 var rabbit = require('../rabbitmq');
 var configManager = require('./config.js');
-var neo4j = require('../neo4j')
-var schema = require('../helpers/schema')
-var helpers = require('../helpers')
+var neo4j = require('../neo4j');
+var librarian = require('../librarian');
+var schema = require('../helpers/schema');
+var helpers = require('../helpers');
 var bodyParser = require('body-parser');
 var fs = require('fs');
 var swagger = require('swagger-tools');
@@ -41,6 +42,9 @@ module.exports = function({config, configSchema}) {
   if(this.config.get('rabbit').enable) {
     this.rabbit = new rabbit(this.config.get('rabbit'));
     this.rabbit.connect();
+  }
+  if(this.config.get('librarian').enable) {
+    this.librarian = new librarian(this.config.get('librarian'));
   }
     
   ////////////////
