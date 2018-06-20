@@ -98,7 +98,7 @@ module.exports = function(config) {
 
   // Allow us to publish a message.
   // Optionally validate against a schema for some additional integrity.
-  this.publishMessage = function(msg,schemaName,{routingKey, exchange}) {
+  this.publishMessage = function(msg,schemaName,{routingKey, exchange}={}) {
     if(!rabbitChannel) return Promise.resolve(false);
     if(!routingKey) routingKey = config.routingKey;
     if(!exchange) exchange = config.exchange;
