@@ -98,8 +98,10 @@ module.exports = function(config) {
 
   // Allow us to publish a message.
   // Optionally validate against a schema for some additional integrity.
-  this.publishMessage = function(msg,schemaName) {
+  this.publishMessage = function(msg,schemaName,{routingKey, exchange}) {
     if(!rabbitChannel) return Promise.resolve(false);
+    if(!routingKey) routingKey = config.routingKey;
+    if(!exchange) exchange = config.exchange;
 
     if(schemaName) {
       var errors = schema.validate(schemaName, msg);
@@ -111,7 +113,7 @@ module.exports = function(config) {
 
     var messageBuffer = new Buffer(JSON.stringify(msg));
     //TODO: Handle when publish queues messages due to full buffers.
-    return rabbitChannel.publish(config.exchange,config.routingKey,messageBuffer)
+    return rabbitChannel.publish(exchange,routingKey,messageBuffer)
   }
 
   // Adds a listener to the rabbit server.
