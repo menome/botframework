@@ -1,6 +1,6 @@
 {
   "name": "@menome/botframework",
-  "version": "2.1.8",
+  "version": "2.1.9",
   "description": "Common functionality for building bots (containerized microservices with a specific set of API calls) for integration with the Menome stack",
   "main": "index.js",
   "scripts": {
@@ -35,7 +35,9 @@
     "neo4j-driver": "^1.6.1",
     "uuid": "^3.2.1",
     "body-parser": "^1.18.2",
-    "convict": "^4.2.0"
+    "convict": "^4.2.0",
+    "request": "latest",
+    "request-promise": "^4.2.2"
   },
   "bugs": {
     "url": "https://github.com/menome/botframework/issues"
