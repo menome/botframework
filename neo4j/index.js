@@ -32,6 +32,12 @@ module.exports = function(config) {
       });
   };
 
+  // Gets a session. Much more open-ended.
+  this.session = function() {
+    if(!driver) driver = neo4j.driver(config.url, neo4j.auth.basic(config.user, config.pass));
+    return driver.session();
+  }
+
   // Runs multiple DB queries in a single session.
   // The callback will give the first error, or a list of all the results.
   // The queries are executed sequentially, not in parallel.
