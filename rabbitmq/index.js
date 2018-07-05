@@ -74,7 +74,7 @@ module.exports = function(config) {
             .then(function(q) {
               log.info("Waiting for messages in %s on exchange '%s'", q.queue, config.exchange);
               rabbitChannel.bindQueue(q.queue, config.exchange, config.routingKey);
-              rabbitChannel.consume(q.queue, function (msg) {
+              return rabbitChannel.consume(q.queue, function (msg) {
                 return handlerWrapper(msg,handler,schemaName)
                   .then(function (result) {
                     if(result) rabbitChannel.ack(msg);
@@ -86,12 +86,11 @@ module.exports = function(config) {
                   });
               }, { noAck: false })
             })
-            .catch((err) => {
-              log.error("Failed to establish channel", err.message);
-            });
         })
 
-        return Promise.all(promises);
+        return Promise.all(promises).catch((err) => {
+          log.error("Failed to establish channel", err.message);
+        });
       })
       .catch((err) => {
         log.error("Failed to connect to RMQ. Will retry: %s", err.message);
