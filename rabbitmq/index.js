@@ -69,7 +69,7 @@ module.exports = function(config) {
       })
       // When we're connected, register all our listeners/handlers.
       .then(() => {
-        handlers.forEach(({handler,queueName,schemaName}) => {
+        var promises = handlers.map(({handler,queueName,schemaName}) => {
           return rabbitChannel.assertQueue(queueName, {durable: true})
             .then(function(q) {
               log.info("Waiting for messages in %s on exchange '%s'", q.queue, config.exchange);
@@ -90,6 +90,8 @@ module.exports = function(config) {
               log.error("Failed to establish channel", err.message);
             });
         })
+
+        return Promise.all(promises);
       })
       .catch((err) => {
         log.error("Failed to connect to RMQ. Will retry: %s", err.message);
