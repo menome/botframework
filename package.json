@@ -32,7 +32,7 @@
     "swagger-tools": "^0.10.3",
     "ajv": "^6.5.0",
     "amqplib": "^0.5.2",
-    "neo4j-driver": "^1.6.1",
+    "neo4j-driver": "^1.7.0",
     "uuid": "^3.2.1",
     "body-parser": "^1.18.2",
     "convict": "^4.2.0",
