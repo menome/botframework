@@ -59,4 +59,29 @@ module.exports = function(config) {
         .pipe(fs.createWriteStream(filePath))
     });
   }
+
+  this.upload = (key,path,readstream) => {
+    var url =  new URL('/file', config.host);
+    
+    url.searchParams.set("library",key);
+    url.searchParams.set("path",path);
+
+    var opts = {
+      url: url.toString(),
+      qs: {
+        library: key,
+        path: path
+      },
+      auth: {
+        user: config.username,
+        pass: config.password
+      },
+      method: "PUT",
+      formData: {
+        upfile: readstream
+      }
+    }
+
+    return rp(opts);
+  }
 }
