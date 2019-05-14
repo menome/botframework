@@ -60,7 +60,7 @@ module.exports = function(config) {
     });
   }
 
-  this.upload = (key,path,readstream) => {
+  this.upload = (key, path, readstream, contentType, filename) => {
     var url =  new URL('/file', config.host);
     
     url.searchParams.set("library",key);
@@ -78,7 +78,10 @@ module.exports = function(config) {
       },
       method: "PUT",
       formData: {
-        upfile: readstream
+        upfile: {
+          value: readstream,
+          options: {contentType, filename}
+        }
       }
     }
 
