@@ -57,7 +57,7 @@ module.exports = function(config) {
         .on('error', (err) => {
           return reject(err);
         })
-        .on('end', () => {
+        .on('finish', () => {
           return resolve(filePath);
         })
     });
