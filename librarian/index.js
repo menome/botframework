@@ -50,13 +50,16 @@ module.exports = function(config) {
 
     return new Promise((resolve,reject) => {
       request(opts)
-        .on('response', () => {
-          return resolve(filePath);
-        })
         .on('error', (err) => {
           return reject(err);
         })
         .pipe(fs.createWriteStream(filePath))
+        .on('error', (err) => {
+          return reject(err);
+        })
+        .on('end', () => {
+          return resolve(filePath);
+        })
     });
   }
 
