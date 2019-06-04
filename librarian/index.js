@@ -90,4 +90,26 @@ module.exports = function(config) {
 
     return rp(opts);
   }
+
+  this.delete = (key, path) => {
+    var url =  new URL('/file', config.host);
+    
+    url.searchParams.set("library",key);
+    url.searchParams.set("path",path);
+
+    var opts = {
+      url: url.toString(),
+      qs: {
+        library: key,
+        path: path
+      },
+      auth: {
+        user: config.username,
+        pass: config.password
+      },
+      method: "DELETE"
+    }
+
+    return rp(opts);
+  }
 }
