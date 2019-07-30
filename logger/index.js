@@ -10,9 +10,9 @@
 module.exports = {
   logging: true,
   info: function(msg, ...args) {
-    if(this.logging) console.log("[INFO] "+msg, ...args);
+    if(this.logging) console.log("[INFO: "+ new Date().toJSON() + "] " + msg, ...args);
   },
   error: function(msg, ...args) {
-    if(this.logging) console.error("[ERROR] "+msg, ...args);
+    if(this.logging) console.error("[ERROR: "+ new Date().toJSON() + "] " + msg, ...args);
   }
 }
