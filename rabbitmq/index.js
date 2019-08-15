@@ -84,7 +84,7 @@ module.exports = function(config) {
                     log.error(err);
                     rabbitChannel.nack(msg, false, false);
                   });
-              }, { noAck: false })
+              }, { noAck: false ,consumerTag:"tmbot"})
             })
         })
 
@@ -127,7 +127,7 @@ module.exports = function(config) {
   }
 
   this.disconnect = function() {
-    if(rabbitChannel) rabbitChannel.disconnect();
+    if(rabbitChannel) rabbitChannel.cancel("tmbot");
     clearInterval(rabbitConnectInterval);
   }
 }
