@@ -42,7 +42,15 @@ module.exports = function(config) {
         return Promise.resolve(false);
       }
     }
-
+    //here is proposed location to add an outgoing message to a counter queue. 
+    //need to have a counting queue routing key somehow, publishing a rabbit message if configured to do so
+    // if(config.counting){
+    //   var countMessage = {
+    //     "Client":config.counting.client,
+    //     "Bot":config.name
+    //   }
+    //   publishMessage(countMessage,"counterMessage",routingKey=config.counting.routingkey, config.counting.exchange)
+    // }
     return handler(parsed)
   }
 
@@ -69,11 +77,11 @@ module.exports = function(config) {
       })
       // When we're connected, register all our listeners/handlers.
       .then(() => {
-        var promises = handlers.map(({handler,queueName,schemaName}) => {
+        var promises = handlers.map(({handler,queueName,schemaName,consumerTag}) => {
           return rabbitChannel.assertQueue(queueName, {durable: true})
             .then(function(q) {
               log.info("Waiting for messages in %s on exchange '%s'", q.queue, config.exchange);
-              rabbitChannel.bindQueue(q.queue, config.exchange, config.routingKey);
+              rabbitChannel.bindQueue(q.queue, config.exchange, queueName);
               return rabbitChannel.consume(q.queue, function (msg) {
                 return handlerWrapper(msg,handler,schemaName)
                   .then(function (result) {
@@ -84,7 +92,7 @@ module.exports = function(config) {
                     log.error(err);
                     rabbitChannel.nack(msg, false, false);
                   });
-              }, { noAck: false ,consumerTag:"tmbot"})
+              }, { noAck: false ,consumerTag})
             })
         })
 
@@ -118,16 +126,17 @@ module.exports = function(config) {
   }
 
   // Adds a listener to the rabbit server.
-  this.addListener = function(queueName,handleMessage,schemaName) {
+  this.addListener = function(queueName,handleMessage,schemaName,consumerTag) {
     return handlers.push({
       handler: handleMessage,
       queueName: queueName,
-      schemaName: schemaName
+      schemaName: schemaName,
+      consumerTag: consumerTag
     })
   }
 
-  this.disconnect = function() {
-    if(rabbitChannel) rabbitChannel.cancel("tmbot");
+  this.disconnect = function(consumerTag) {
+    if(rabbitChannel) rabbitChannel.cancel(consumerTag);
     clearInterval(rabbitConnectInterval);
   }
 }
