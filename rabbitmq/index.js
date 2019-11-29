@@ -85,7 +85,8 @@ module.exports = function(config) {
               return rabbitChannel.consume(q.queue, function (msg) {
                 return handlerWrapper(msg,handler,schemaName)
                   .then(function (result) {
-                    if(result) rabbitChannel.ack(msg);
+                    if(result === "requeue") rabbitChannel.nack(msg, false, true)
+                    else if(result) rabbitChannel.ack(msg);
                     else rabbitChannel.nack(msg, false, false);
                   })
                   .catch(function (err) {
