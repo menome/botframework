@@ -111,7 +111,7 @@ module.exports = function({config, configSchema}) {
     }.bind(this));
 
     http.createServer(this.web).listen(this.config.get('port'));
-    this.logger.info("Listening on port", this.config.get('port'))
+    this.logger.info("Listening on", { port:this.config.get('port') })
 
     // If we have SSL, use it.
     if(this.config.get('ssl.enable')) {
