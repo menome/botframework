@@ -28,16 +28,17 @@
     "simple-mock": "^0.8.0"
   },
   "dependencies": {
-    "express": "latest",
-    "swagger-tools": "^0.10.3",
     "ajv": "^6.5.0",
     "amqplib": "^0.5.2",
-    "neo4j-driver": "^1.7.0",
-    "uuid": "^3.2.1",
     "body-parser": "^1.18.2",
     "convict": "^4.2.0",
+    "express": "latest",
+    "neo4j-driver": "^1.7.0",
     "request": "latest",
-    "request-promise": "^4.2.2"
+    "request-promise": "^4.2.2",
+    "swagger-tools": "^0.10.3",
+    "uuid": "^3.2.1",
+    "winston": "^3.2.1"
   },
   "bugs": {
     "url": "https://github.com/menome/botframework/issues"
