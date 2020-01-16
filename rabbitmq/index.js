@@ -7,6 +7,7 @@
 var amqp = require('amqplib');
 var log = require('../logger');
 var schema = require('../helpers/schema');
+var util = require('util');
 
 // Constructor for Rabbit interface.
 module.exports = function(config) {
@@ -31,14 +32,14 @@ module.exports = function(config) {
       parsed = JSON.parse(msg.content);
     }
     catch(ex) {
-      log.error("Malformed JSON in message");
+      log.error("Malformed JSON in message",{exception:ex});
       return Promise.resolve(false);
     }
     
     if(schemaName) {
       var errors = schema.validate(schemaName, parsed);
       if (errors) {
-        log.error("Received message was malformed:", errors);
+        log.error("Received message was malformed",{ error:errors});
         return Promise.resolve(false);
       }
     }
@@ -80,7 +81,7 @@ module.exports = function(config) {
         var promises = handlers.map(({handler,queueName,schemaName,consumerTag}) => {
           return rabbitChannel.assertQueue(queueName, {durable: true})
             .then(function(q) {
-              log.info("Waiting for messages in %s on exchange '%s'", q.queue, config.exchange);
+              log.info("Waiting for messages",{ queue:q.queue, exchange:config.exchange});
               rabbitChannel.bindQueue(q.queue, config.exchange, queueName);
               return rabbitChannel.consume(q.queue, function (msg) {
                 return handlerWrapper(msg,handler,schemaName)
@@ -98,11 +99,11 @@ module.exports = function(config) {
         })
 
         return Promise.all(promises).catch((err) => {
-          log.error("Failed to establish channel", err.message);
+          log.error("Failed to establish channel",{error:err.message});
         });
       })
       .catch((err) => {
-        log.error("Failed to connect to RMQ. Will retry: %s", err.message);
+        log.error("Failed to connect to RMQ. Will retry", {error:err.message});
       })
   }
 
@@ -116,7 +117,7 @@ module.exports = function(config) {
     if(schemaName) {
       var errors = schema.validate(schemaName, msg);
       if (errors) {
-        log.error("Attempted to publish a malformed message:", errors);
+        log.error("Attempted to publish a malformed message:",{error:errors});
         return Promise.resolve(false);
       }
     }

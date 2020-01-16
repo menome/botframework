@@ -65,10 +65,11 @@ bot.registerControllers(__dirname+'/controllers')
 
 ## Class: Logger()
 
-The bot surfaces some convenient logging methods. Call them in the same way you would call `console.log` or `console.error`
+The bot surfaces some convenient logging methods. Call them in the same way you would call `winston.log` or `winston.log('error|info', ...)`
 
 **Example**
 ```javascript
+bot.logger.log('level',"This is an info message!",{stuff:"things"})
 bot.logger.info("This is an info message!")
 bot.logger.error("This is an error message!")
 ```
