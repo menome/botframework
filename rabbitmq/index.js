@@ -7,7 +7,6 @@
 var amqp = require('amqplib');
 var log = require('../logger');
 var schema = require('../helpers/schema');
-var util = require('util');
 
 // Constructor for Rabbit interface.
 module.exports = function(config) {
@@ -82,7 +81,7 @@ module.exports = function(config) {
           return rabbitChannel.assertQueue(queueName, {durable: true})
             .then(function(q) {
               log.info("Waiting for messages",{ queue:q.queue, exchange:config.exchange});
-              rabbitChannel.bindQueue(q.queue, config.exchange, queueName);
+              rabbitChannel.bindQueue(q.queue, config.exchange, config.routingKey);
               return rabbitChannel.consume(q.queue, function (msg) {
                 return handlerWrapper(msg,handler,schemaName)
                   .then(function (result) {
