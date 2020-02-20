@@ -18,7 +18,7 @@ describe('Neo4j', function () {
   });
   
   it('Creates Driver', function () {
-    simple.mock(neo4jdriver.v1, 'driver');
+    simple.mock(neo4jdriver, 'driver');
     
     new neo4j({
       url: "bolt://localhost",
@@ -26,7 +26,7 @@ describe('Neo4j', function () {
       pass: "password"
     });
 
-    assert.equal(neo4jdriver.v1.driver.callCount,1)    
+    assert.equal(neo4jdriver.driver.callCount,1)    
   });
 
   it('Executes a query', function (done) {
@@ -35,7 +35,7 @@ describe('Neo4j', function () {
       return Promise.resolve("test");
     })
     simple.mock(session,"close")
-    simple.mock(neo4jdriver.v1, 'driver', function() {
+    simple.mock(neo4jdriver, 'driver', function() {
       return {
         session: () => {
           return session;
@@ -49,7 +49,7 @@ describe('Neo4j', function () {
       pass: "password"
     });
     
-    simple.mock(neo4jdriver.v1)
+    simple.mock(neo4jdriver)
 
     var query = "MATCH (n) RETURN n limit 1"
     var params = {param: 1}

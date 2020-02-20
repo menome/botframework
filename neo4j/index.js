@@ -5,7 +5,7 @@
 */
 "use strict";
 
-var neo4j = require('neo4j-driver').v1;
+var neo4j = require('neo4j-driver');
 
 // Constructor for neo4j interface
 module.exports = function(config) {
