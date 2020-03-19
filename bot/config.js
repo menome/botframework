@@ -114,6 +114,12 @@ module.exports.botSchema = {
       default: false,
       env: "NEO4J_ENABLE"
     },
+    encrypted: {
+      doc: "Whether or not to use an encrypted connection to neo4j",
+      format: "Boolean",
+      default: true,
+      env: "NEO4J_ENCRYPTED"
+    },
     url: {
       doc: "The bolt URL of the neo4j server.",
       format: String,

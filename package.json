@@ -1,6 +1,6 @@
 {
   "name": "@menome/botframework",
-  "version": "3.1.3",
+  "version": "3.1.4",
   "description": "Common functionality for building bots (containerized microservices with a specific set of API calls) for integration with the Menome stack",
   "main": "index.js",
   "scripts": {

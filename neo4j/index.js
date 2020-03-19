@@ -10,12 +10,12 @@ var neo4j = require('neo4j-driver');
 // Constructor for neo4j interface
 module.exports = function(config) {
   this.config = config;
-  var driver = neo4j.driver(config.url, neo4j.auth.basic(config.user, config.pass));
+  var driver = neo4j.driver(config.url, neo4j.auth.basic(config.user, config.pass), {encrypted: config.encrypted});
 
   // Generic way for app to schedule queries, while getting passed any errors.
   // Accepts a callback cb(err,result) but also returns a promise
   this.query = function(queryStr, queryParams, cb) {
-    if(!driver) driver = neo4j.driver(config.url, neo4j.auth.basic(config.user, config.pass));
+    if(!driver) driver = neo4j.driver(config.url, neo4j.auth.basic(config.user, config.pass), {encrypted: config.encrypted});
     
     var session = driver.session();
     return session
@@ -34,7 +34,7 @@ module.exports = function(config) {
 
   // Gets a session. Much more open-ended.
   this.session = function() {
-    if(!driver) driver = neo4j.driver(config.url, neo4j.auth.basic(config.user, config.pass));
+    if(!driver) driver = neo4j.driver(config.url, neo4j.auth.basic(config.user, config.pass), {encrypted: config.encrypted});
     return driver.session();
   }
 
