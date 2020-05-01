@@ -7,10 +7,10 @@
 var Ajv = require('ajv');
 
 // Validate data against a schema.
-module.exports.validate = function(schema, data) {
+module.exports.validate = function (schema, data) {
   var thisSchema = schema;
-  if(typeof thisSchema === 'string') thisSchema = module.exports.schemas[schema];
-  if(!thisSchema) throw new Error("Schema does not exist.");
+  if (typeof thisSchema === 'string') thisSchema = module.exports.schemas[schema];
+  if (!thisSchema) throw new Error("Schema does not exist.");
   var ajv = new Ajv(); // options can be passed, e.g. {allErrors: true} 
   var validateMessage = ajv.compile(thisSchema);
   validateMessage(data);
@@ -18,10 +18,23 @@ module.exports.validate = function(schema, data) {
 }
 
 module.exports.schemas = {
+  bulkLoadMessage: {
+    "required": ["sourceId", "payload"],
+    "type": "object",
+    "properties": {
+      "sourceId": { "type": "string" },
+      "payload": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      }
+    }
+  },
   crawlerMessage: { // Crawler events should be in this format.
     "title": "crawlerMessage",
     "type": "object",
-    "required": ["Library","Path"],
+    "required": ["Library", "Path"],
     "additionalProperties": true,
     "properties": {
       "Library": {
@@ -32,7 +45,7 @@ module.exports.schemas = {
       },
       "EventType": {
         "type": "string",
-        "enum": ["CREATE","DELETE","UPDATE"]
+        "enum": ["CREATE", "DELETE", "UPDATE"]
       },
       "Timestamp": {
         "type": "string"
@@ -42,7 +55,7 @@ module.exports.schemas = {
   fileProcessingMessage: { // Crawler events should be in this format.
     "title": "fileProcessingMessage",
     "type": "object",
-    "required": ["Library","Path","Uuid"],
+    "required": ["Library", "Path", "Uuid"],
     "additionalProperties": false,
     "properties": {
       "Library": {
@@ -65,7 +78,7 @@ module.exports.schemas = {
   harvesterMessage: {
     "title": "harvesterMessage",
     "type": "object",
-    "required": ["NodeType","ConformedDimensions"],
+    "required": ["NodeType", "ConformedDimensions"],
     "additionalProperties": false,
     "properties": {
       "Name": {
@@ -111,7 +124,7 @@ module.exports.schemas = {
         "type": "array",
         "items": {
           "type": "object",
-          "required": ["NodeType","RelType","ForwardRel","ConformedDimensions"],
+          "required": ["NodeType", "RelType", "ForwardRel", "ConformedDimensions"],
           "additionalProperties": false,
           "properties": {
             "Name": {
@@ -191,7 +204,7 @@ module.exports.schemas = {
     "properties": {
       "state": {
         "type": "string",
-        "enum": ["idle","initializing","working","failed"]
+        "enum": ["idle", "initializing", "working", "failed"]
       },
       "message": {
         "type": "string"
@@ -202,14 +215,14 @@ module.exports.schemas = {
     }
   },
   endpointMetadata: {
-    "required": ["name","path","method","desc"],
+    "required": ["name", "path", "method", "desc"],
     "properties": {
       "name": {
         "type": "string"
       },
       "method": {
         "type": "string",
-        "enum": ["GET","POST","PUT","OPTIONS","DELETE"]
+        "enum": ["GET", "POST", "PUT", "OPTIONS", "DELETE"]
       },
       "path": {
         "type": "string"
@@ -224,7 +237,7 @@ module.exports.schemas = {
         "type": "array",
         "items": {
           "type": "object",
-          "required": ["name","desc"],
+          "required": ["name", "desc"],
           "properties": {
             "name": {
               "type": "string",

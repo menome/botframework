@@ -35,7 +35,7 @@ module.exports = function(config) {
       return Promise.resolve(false);
     }
     
-    if(schemaName) {
+    if(schemaName) {      
       var errors = schema.validate(schemaName, parsed);
       if (errors) {
         log.error("Received message was malformed",{ error:errors});
@@ -50,7 +50,7 @@ module.exports = function(config) {
     //     "Bot":config.name
     //   }
     //   publishMessage(countMessage,"counterMessage",routingKey=config.counting.routingkey, config.counting.exchange)
-    // }
+    // }    
     return handler(parsed)
   }
 
@@ -59,8 +59,8 @@ module.exports = function(config) {
     log.info("Attempting to connect to RMQ.");
     return amqp.connect(config.url)
       .then(function(conn) {
-        conn.on('error', function(err) {
-          log.error(err);
+        conn.on('error', function(err) {          
+          log.error("connectionError:",err);
           conn.close();
           rabbitChannel = null;
           rabbitConnectInterval = setInterval(rabbitConnect, 5000);
@@ -90,7 +90,7 @@ module.exports = function(config) {
                     else rabbitChannel.nack(msg, false, false);
                   })
                   .catch(function (err) {
-                    log.error(err);
+                    log.error("channelError:",err);
                     rabbitChannel.nack(msg, false, false);
                   });
               }, { noAck: false ,consumerTag})
