@@ -1,6 +1,6 @@
 {
   "name": "@menome/botframework",
-  "version": "3.1.4",
+  "version": "3.1.5",
   "description": "Common functionality for building bots (containerized microservices with a specific set of API calls) for integration with the Menome stack",
   "main": "index.js",
   "scripts": {
@@ -22,8 +22,8 @@
   "author": "Menome Technologies Inc.",
   "license": "Commercial",
   "devDependencies": {
-    "mocha": "^5.1.1",
     "chai": "^4.1.2",
+    "mocha": "^7.1.2",
     "mock-require": "^3.0.2",
     "simple-mock": "^0.8.0"
   },
