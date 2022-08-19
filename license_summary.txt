@@ -1,0 +1,16 @@
+├─ MIT: 303
+├─ ISC: 42
+├─ Apache-2.0: 13
+├─ BSD-3-Clause: 10
+├─ BSD-2-Clause: 6
+├─ Custom: https://travis-ci.org/squaremo/bitsyntax-js.png: 1
+├─ MIT*: 1
+├─ Custom: https://github.com/menome/harvesterTemplate: 1
+├─ AFLv2.1,BSD: 1
+├─ WTFPL: 1
+├─ CC-BY-3.0: 1
+├─ CC0-1.0: 1
+├─ (MIT AND CC-BY-3.0): 1
+├─ Public Domain: 1
+└─ Unlicense: 1
+

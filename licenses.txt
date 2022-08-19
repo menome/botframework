@@ -1,0 +1,2695 @@
+├─ @babel/runtime@7.8.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/babel/babel
+│  ├─ publisher: Sebastian McKenzie
+│  ├─ email: sebmck@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/@babel/runtime
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/@babel/runtime/LICENSE
+├─ @menome/botframework@3.1.5
+│  ├─ licenses: Custom: https://github.com/menome/harvesterTemplate
+│  ├─ repository: https://github.com/menome/botframework
+│  ├─ publisher: Menome Technologies Inc.
+│  ├─ path: /mnt/e/Development/botFramework
+│  └─ licenseFile: /mnt/e/Development/botFramework/README.md
+├─ abbrev@1.1.1
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/isaacs/abbrev-js
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/abbrev
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/abbrev/LICENSE
+├─ accepts@1.3.7
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jshttp/accepts
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/accepts
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/accepts/LICENSE
+├─ ajv@6.11.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/epoberezkin/ajv
+│  ├─ publisher: Evgeny Poberezkin
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/har-validator/node_modules/ajv
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/har-validator/node_modules/ajv/LICENSE
+├─ ajv@6.5.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/epoberezkin/ajv
+│  ├─ publisher: Evgeny Poberezkin
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/ajv
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/ajv/LICENSE
+├─ amqplib@0.5.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/squaremo/amqp.node
+│  ├─ publisher: Michael Bridgen
+│  ├─ email: mikeb@squaremobius.net
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/amqplib
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/amqplib/LICENSE
+├─ ansi-colors@3.2.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/doowb/ansi-colors
+│  ├─ publisher: Brian Woodward
+│  ├─ url: https://github.com/doowb
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/ansi-colors
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/ansi-colors/LICENSE
+├─ ansi-regex@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chalk/ansi-regex
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/ansi-regex
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/ansi-regex/license
+├─ ansi-regex@4.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chalk/ansi-regex
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/cliui/node_modules/ansi-regex
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/cliui/node_modules/ansi-regex/license
+├─ ansi-styles@3.2.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chalk/ansi-styles
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/ansi-styles
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/ansi-styles/license
+├─ anymatch@3.1.1
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/micromatch/anymatch
+│  ├─ publisher: Elan Shanker
+│  ├─ url: https://github.com/es128
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/anymatch
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/anymatch/LICENSE
+├─ append-field@1.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/LinusU/node-append-field
+│  ├─ publisher: Linus Unnebäck
+│  ├─ email: linus@folkdatorn.se
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/append-field
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/append-field/LICENSE
+├─ argparse@1.0.10
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/nodeca/argparse
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/argparse
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/argparse/LICENSE
+├─ array-find-index@1.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/array-find-index
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/array-find-index
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/array-find-index/license
+├─ array-flatten@1.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/blakeembrey/array-flatten
+│  ├─ publisher: Blake Embrey
+│  ├─ email: hello@blakeembrey.com
+│  ├─ url: http://blakeembrey.me
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/array-flatten
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/array-flatten/LICENSE
+├─ asap@2.0.6
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/kriskowal/asap
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/asap
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/asap/LICENSE.md
+├─ asn1@0.2.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/joyent/node-asn1
+│  ├─ publisher: Joyent
+│  ├─ url: joyent.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/asn1
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/asn1/LICENSE
+├─ assert-plus@1.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/mcavage/node-assert-plus
+│  ├─ publisher: Mark Cavage
+│  ├─ email: mcavage@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/assert-plus
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/assert-plus/README.md
+├─ assertion-error@1.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chaijs/assertion-error
+│  ├─ publisher: Jake Luer
+│  ├─ email: jake@qualiancy.com
+│  ├─ url: http://qualiancy.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/assertion-error
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/assertion-error/README.md
+├─ async@2.6.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/caolan/async
+│  ├─ publisher: Caolan McMahon
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/async
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/async/LICENSE
+├─ async@2.6.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/caolan/async
+│  ├─ publisher: Caolan McMahon
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/winston/node_modules/async
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/winston/node_modules/async/LICENSE
+├─ asynckit@0.4.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/alexindigo/asynckit
+│  ├─ publisher: Alex Indigo
+│  ├─ email: iam@alexindigo.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/asynckit
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/asynckit/LICENSE
+├─ aws-sign2@0.7.0
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/mikeal/aws-sign
+│  ├─ publisher: Mikeal Rogers
+│  ├─ email: mikeal.rogers@gmail.com
+│  ├─ url: http://www.futurealoof.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/aws-sign2
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/aws-sign2/LICENSE
+├─ aws4@1.9.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/mhart/aws4
+│  ├─ publisher: Michael Hart
+│  ├─ email: michael.hart.au@gmail.com
+│  ├─ url: http://github.com/mhart
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/aws4
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/aws4/LICENSE
+├─ balanced-match@1.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/juliangruber/balanced-match
+│  ├─ publisher: Julian Gruber
+│  ├─ email: mail@juliangruber.com
+│  ├─ url: http://juliangruber.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/balanced-match
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/balanced-match/LICENSE.md
+├─ bcrypt-pbkdf@1.0.2
+│  ├─ licenses: BSD-3-Clause
+│  ├─ repository: https://github.com/joyent/node-bcrypt-pbkdf
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/bcrypt-pbkdf
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/bcrypt-pbkdf/LICENSE
+├─ binary-extensions@2.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/binary-extensions
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/binary-extensions
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/binary-extensions/license
+├─ bitsyntax@0.0.4
+│  ├─ licenses: Custom: https://travis-ci.org/squaremo/bitsyntax-js.png
+│  ├─ repository: https://github.com/squaremo/bitsyntax-js
+│  ├─ publisher: Michael Bridgen
+│  ├─ email: <mikeb@squaremobius.net
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/bitsyntax
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/bitsyntax/README.md
+├─ bluebird@3.5.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/petkaantonov/bluebird
+│  ├─ publisher: Petka Antonov
+│  ├─ email: petka_antonov@hotmail.com
+│  ├─ url: http://github.com/petkaantonov/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/bluebird
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/bluebird/LICENSE
+├─ body-parser@1.18.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/expressjs/body-parser
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/body-parser
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/body-parser/LICENSE
+├─ body-parser@1.19.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/expressjs/body-parser
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/express/node_modules/body-parser
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/express/node_modules/body-parser/LICENSE
+├─ brace-expansion@1.1.11
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/juliangruber/brace-expansion
+│  ├─ publisher: Julian Gruber
+│  ├─ email: mail@juliangruber.com
+│  ├─ url: http://juliangruber.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/brace-expansion
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/brace-expansion/LICENSE
+├─ braces@3.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromatch/braces
+│  ├─ publisher: Jon Schlinkert
+│  ├─ url: https://github.com/jonschlinkert
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/braces
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/braces/LICENSE
+├─ browser-stdout@1.3.1
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/kumavis/browser-stdout
+│  ├─ publisher: kumavis
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/browser-stdout
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/browser-stdout/LICENSE
+├─ buffer-from@1.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/LinusU/buffer-from
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/buffer-from
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/buffer-from/LICENSE
+├─ buffer-more-ints@0.0.2
+│  ├─ licenses: MIT*
+│  ├─ repository: https://github.com/dpw/node-buffer-more-ints
+│  ├─ publisher: David Wragg
+│  ├─ email: david@wragg.org
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/buffer-more-ints
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/buffer-more-ints/LICENSE
+├─ busboy@0.2.14
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/mscdex/busboy
+│  ├─ publisher: Brian White
+│  ├─ email: mscdex@mscdex.net
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/busboy
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/busboy/LICENSE
+├─ bytes@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/visionmedia/bytes.js
+│  ├─ publisher: TJ Holowaychuk
+│  ├─ email: tj@vision-media.ca
+│  ├─ url: http://tjholowaychuk.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/bytes
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/bytes/LICENSE
+├─ bytes@3.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/visionmedia/bytes.js
+│  ├─ publisher: TJ Holowaychuk
+│  ├─ email: tj@vision-media.ca
+│  ├─ url: http://tjholowaychuk.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/express/node_modules/bytes
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/express/node_modules/bytes/LICENSE
+├─ camelcase@4.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/camelcase
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/camelcase
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/camelcase/license
+├─ camelcase@5.3.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/camelcase
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/yargs/node_modules/camelcase
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/yargs/node_modules/camelcase/license
+├─ caseless@0.12.0
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/mikeal/caseless
+│  ├─ publisher: Mikeal Rogers
+│  ├─ email: mikeal.rogers@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/caseless
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/caseless/LICENSE
+├─ chai@4.1.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chaijs/chai
+│  ├─ publisher: Jake Luer
+│  ├─ email: jake@alogicalparadox.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/chai
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/chai/LICENSE
+├─ chalk@2.4.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chalk/chalk
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/chalk
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/chalk/license
+├─ check-error@1.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chaijs/check-error
+│  ├─ publisher: Jake Luer
+│  ├─ email: jake@alogicalparadox.com
+│  ├─ url: http://alogicalparadox.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/check-error
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/check-error/LICENSE
+├─ chokidar@3.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/paulmillr/chokidar
+│  ├─ publisher: Paul Miller
+│  ├─ url: https://paulmillr.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/chokidar
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/chokidar/LICENSE
+├─ cliui@5.0.0
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/yargs/cliui
+│  ├─ publisher: Ben Coe
+│  ├─ email: ben@npmjs.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/cliui
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/cliui/LICENSE.txt
+├─ color-convert@1.9.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/Qix-/color-convert
+│  ├─ publisher: Heather Arthur
+│  ├─ email: fayearthur@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/color-convert
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/color-convert/LICENSE
+├─ color-name@1.1.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/dfcreative/color-name
+│  ├─ publisher: DY
+│  ├─ email: dfcreative@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/color-name
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/color-name/LICENSE
+├─ color-string@1.5.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/Qix-/color-string
+│  ├─ publisher: Heather Arthur
+│  ├─ email: fayearthur@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/color-string
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/color-string/LICENSE
+├─ color@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/Qix-/color
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/color
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/color/LICENSE
+├─ colornames@1.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/timoxley/colornames
+│  ├─ publisher: Tim Oxley
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/colornames
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/colornames/LICENSE
+├─ colors@1.4.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/Marak/colors.js
+│  ├─ publisher: Marak Squires
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/colors
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/colors/LICENSE
+├─ colorspace@1.1.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/3rd-Eden/colorspace
+│  ├─ publisher: Arnout Kazemier
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/colorspace
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/colorspace/LICENSE.md
+├─ combined-stream@1.0.6
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/felixge/node-combined-stream
+│  ├─ publisher: Felix Geisendörfer
+│  ├─ email: felix@debuggable.com
+│  ├─ url: http://debuggable.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/combined-stream
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/combined-stream/License
+├─ commander@2.11.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/tj/commander.js
+│  ├─ publisher: TJ Holowaychuk
+│  ├─ email: tj@vision-media.ca
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/commander
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/commander/LICENSE
+├─ component-emitter@1.2.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/component/emitter
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/component-emitter
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/component-emitter/LICENSE
+├─ concat-map@0.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/substack/node-concat-map
+│  ├─ publisher: James Halliday
+│  ├─ email: mail@substack.net
+│  ├─ url: http://substack.net
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/concat-map
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/concat-map/LICENSE
+├─ concat-stream@1.6.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/maxogden/concat-stream
+│  ├─ publisher: Max Ogden
+│  ├─ email: max@maxogden.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/concat-stream
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/concat-stream/LICENSE
+├─ content-disposition@0.5.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jshttp/content-disposition
+│  ├─ publisher: Douglas Christopher Wilson
+│  ├─ email: doug@somethingdoug.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/content-disposition
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/content-disposition/LICENSE
+├─ content-type@1.0.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jshttp/content-type
+│  ├─ publisher: Douglas Christopher Wilson
+│  ├─ email: doug@somethingdoug.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/content-type
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/content-type/LICENSE
+├─ convict@4.2.0
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/mozilla/node-convict
+│  ├─ publisher: Lloyd Hilaiel
+│  ├─ email: lloyd@hilaiel.com
+│  ├─ url: http://lloyd.io
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/convict
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/convict/LICENSE
+├─ cookie-signature@1.0.6
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/visionmedia/node-cookie-signature
+│  ├─ publisher: TJ Holowaychuk
+│  ├─ email: tj@learnboost.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/cookie-signature
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/cookie-signature/Readme.md
+├─ cookie@0.4.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jshttp/cookie
+│  ├─ publisher: Roman Shtylman
+│  ├─ email: shtylman@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/cookie
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/cookie/LICENSE
+├─ cookiejar@2.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/bmeck/node-cookiejar
+│  ├─ publisher: bradleymeck
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/cookiejar
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/cookiejar/LICENSE
+├─ core-util-is@1.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/isaacs/core-util-is
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/core-util-is
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/core-util-is/LICENSE
+├─ dashdash@1.14.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/trentm/node-dashdash
+│  ├─ publisher: Trent Mick
+│  ├─ email: trentm@gmail.com
+│  ├─ url: http://trentm.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/dashdash
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/dashdash/LICENSE.txt
+├─ debug@2.6.9
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/visionmedia/debug
+│  ├─ publisher: TJ Holowaychuk
+│  ├─ email: tj@vision-media.ca
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/debug
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/debug/LICENSE
+├─ debug@3.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/visionmedia/debug
+│  ├─ publisher: TJ Holowaychuk
+│  ├─ email: tj@vision-media.ca
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/swagger-tools/node_modules/debug
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/swagger-tools/node_modules/debug/LICENSE
+├─ debug@3.2.6
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/visionmedia/debug
+│  ├─ publisher: TJ Holowaychuk
+│  ├─ email: tj@vision-media.ca
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/license-checker/node_modules/debug
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/license-checker/node_modules/debug/LICENSE
+├─ debuglog@1.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sam-github/node-debuglog
+│  ├─ publisher: Sam Roberts
+│  ├─ email: sam@strongloop.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/debuglog
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/debuglog/LICENSE
+├─ decamelize@1.2.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/decamelize
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/decamelize
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/decamelize/license
+├─ deep-eql@3.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chaijs/deep-eql
+│  ├─ publisher: Jake Luer
+│  ├─ email: jake@alogicalparadox.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/deep-eql
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/deep-eql/LICENSE
+├─ define-properties@1.1.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/ljharb/define-properties
+│  ├─ publisher: Jordan Harband
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/define-properties
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/define-properties/LICENSE
+├─ delayed-stream@1.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/felixge/node-delayed-stream
+│  ├─ publisher: Felix Geisendörfer
+│  ├─ email: felix@debuggable.com
+│  ├─ url: http://debuggable.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/delayed-stream
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/delayed-stream/License
+├─ depd@1.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/dougwilson/nodejs-depd
+│  ├─ publisher: Douglas Christopher Wilson
+│  ├─ email: doug@somethingdoug.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/depd
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/depd/LICENSE
+├─ depd@1.1.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/dougwilson/nodejs-depd
+│  ├─ publisher: Douglas Christopher Wilson
+│  ├─ email: doug@somethingdoug.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/express/node_modules/depd
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/express/node_modules/depd/LICENSE
+├─ destroy@1.0.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/stream-utils/destroy
+│  ├─ publisher: Jonathan Ong
+│  ├─ email: me@jongleberry.com
+│  ├─ url: http://jongleberry.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/destroy
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/destroy/LICENSE
+├─ dezalgo@1.0.3
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/npm/dezalgo
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/dezalgo
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/dezalgo/LICENSE
+├─ diagnostics@1.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/bigpipe/diagnostics
+│  ├─ publisher: Arnout Kazemier
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/diagnostics
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/diagnostics/LICENSE.md
+├─ dicer@0.2.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/mscdex/dicer
+│  ├─ publisher: Brian White
+│  ├─ email: mscdex@mscdex.net
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/dicer
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/dicer/LICENSE
+├─ diff@3.5.0
+│  ├─ licenses: BSD-3-Clause
+│  ├─ repository: https://github.com/kpdecker/jsdiff
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/diff
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/diff/LICENSE
+├─ ecc-jsbn@0.1.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/quartzjer/ecc-jsbn
+│  ├─ publisher: Jeremie Miller
+│  ├─ email: jeremie@jabber.org
+│  ├─ url: http://jeremie.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/ecc-jsbn
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/ecc-jsbn/LICENSE
+├─ ee-first@1.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jonathanong/ee-first
+│  ├─ publisher: Jonathan Ong
+│  ├─ email: me@jongleberry.com
+│  ├─ url: http://jongleberry.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/ee-first
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/ee-first/LICENSE
+├─ emoji-regex@7.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/mathiasbynens/emoji-regex
+│  ├─ publisher: Mathias Bynens
+│  ├─ url: https://mathiasbynens.be/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/emoji-regex
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/emoji-regex/LICENSE-MIT.txt
+├─ enabled@1.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/bigpipe/enabled
+│  ├─ publisher: Arnout Kazemier
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/enabled
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/enabled/LICENSE.md
+├─ encodeurl@1.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/pillarjs/encodeurl
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/encodeurl
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/encodeurl/LICENSE
+├─ encodeurl@1.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/pillarjs/encodeurl
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/express/node_modules/encodeurl
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/express/node_modules/encodeurl/LICENSE
+├─ env-variable@0.0.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/3rd-Eden/env-variable
+│  ├─ publisher: Arnout Kazemier
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/env-variable
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/env-variable/LICENSE
+├─ es-abstract@1.17.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/ljharb/es-abstract
+│  ├─ publisher: Jordan Harband
+│  ├─ email: ljharb@gmail.com
+│  ├─ url: http://ljharb.codes
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/es-abstract
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/es-abstract/LICENSE
+├─ es-to-primitive@1.2.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/ljharb/es-to-primitive
+│  ├─ publisher: Jordan Harband
+│  ├─ email: ljharb@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/es-to-primitive
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/es-to-primitive/LICENSE
+├─ escape-html@1.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/component/escape-html
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/escape-html
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/escape-html/LICENSE
+├─ escape-string-regexp@1.0.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/escape-string-regexp
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/escape-string-regexp
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/escape-string-regexp/license
+├─ esprima@3.0.0
+│  ├─ licenses: BSD-2-Clause
+│  ├─ repository: https://github.com/jquery/esprima
+│  ├─ publisher: Ariya Hidayat
+│  ├─ email: ariya.hidayat@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/esprima
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/esprima/LICENSE.BSD
+├─ esprima@4.0.1
+│  ├─ licenses: BSD-2-Clause
+│  ├─ repository: https://github.com/jquery/esprima
+│  ├─ publisher: Ariya Hidayat
+│  ├─ email: ariya.hidayat@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/js-yaml/node_modules/esprima
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/js-yaml/node_modules/esprima/LICENSE.BSD
+├─ etag@1.8.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jshttp/etag
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/etag
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/etag/LICENSE
+├─ express@4.17.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/expressjs/express
+│  ├─ publisher: TJ Holowaychuk
+│  ├─ email: tj@vision-media.ca
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/express
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/express/LICENSE
+├─ extend@3.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/justmoon/node-extend
+│  ├─ publisher: Stefan Thomas
+│  ├─ email: justmoon@members.fsf.org
+│  ├─ url: http://www.justmoon.net
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/request/node_modules/extend
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/request/node_modules/extend/LICENSE
+├─ extsprintf@1.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/davepacheco/node-extsprintf
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/extsprintf
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/extsprintf/LICENSE
+├─ fast-deep-equal@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/epoberezkin/fast-deep-equal
+│  ├─ publisher: Evgeny Poberezkin
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/fast-deep-equal
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/fast-deep-equal/LICENSE
+├─ fast-deep-equal@3.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/epoberezkin/fast-deep-equal
+│  ├─ publisher: Evgeny Poberezkin
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/har-validator/node_modules/fast-deep-equal
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/har-validator/node_modules/fast-deep-equal/LICENSE
+├─ fast-json-stable-stringify@2.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/epoberezkin/fast-json-stable-stringify
+│  ├─ publisher: James Halliday
+│  ├─ email: mail@substack.net
+│  ├─ url: http://substack.net
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/fast-json-stable-stringify
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/fast-json-stable-stringify/LICENSE
+├─ fast-safe-stringify@2.0.7
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/davidmarkclements/fast-safe-stringify
+│  ├─ publisher: David Mark Clements
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/fast-safe-stringify
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/fast-safe-stringify/LICENSE
+├─ fecha@2.3.3
+│  ├─ licenses: MIT
+│  ├─ repository: git+https://taylorhakes@github.com/taylorhakes/fecha
+│  ├─ publisher: Taylor Hakes
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/fecha
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/fecha/LICENSE
+├─ fill-range@7.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jonschlinkert/fill-range
+│  ├─ publisher: Jon Schlinkert
+│  ├─ url: https://github.com/jonschlinkert
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/fill-range
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/fill-range/LICENSE
+├─ finalhandler@1.1.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/pillarjs/finalhandler
+│  ├─ publisher: Douglas Christopher Wilson
+│  ├─ email: doug@somethingdoug.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/finalhandler
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/finalhandler/LICENSE
+├─ find-up@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/find-up
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/find-up
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/find-up/license
+├─ flat@4.1.0
+│  ├─ licenses: BSD-3-Clause
+│  ├─ repository: https://github.com/hughsk/flat
+│  ├─ publisher: Hugh Kennedy
+│  ├─ email: hughskennedy@gmail.com
+│  ├─ url: http://hughskennedy.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/flat
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/flat/LICENSE
+├─ forever-agent@0.6.1
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/mikeal/forever-agent
+│  ├─ publisher: Mikeal Rogers
+│  ├─ email: mikeal.rogers@gmail.com
+│  ├─ url: http://www.futurealoof.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/forever-agent
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/forever-agent/LICENSE
+├─ form-data@2.3.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/form-data/form-data
+│  ├─ publisher: Felix Geisendörfer
+│  ├─ email: felix@debuggable.com
+│  ├─ url: http://debuggable.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/form-data
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/form-data/License
+├─ formidable@1.2.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/felixge/node-formidable
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/formidable
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/formidable/LICENSE
+├─ forwarded@0.1.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jshttp/forwarded
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/forwarded
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/forwarded/LICENSE
+├─ fresh@0.5.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jshttp/fresh
+│  ├─ publisher: TJ Holowaychuk
+│  ├─ email: tj@vision-media.ca
+│  ├─ url: http://tjholowaychuk.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/fresh
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/fresh/LICENSE
+├─ fs.realpath@1.0.0
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/isaacs/fs.realpath
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/fs.realpath
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/fs.realpath/LICENSE
+├─ function-bind@1.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/Raynos/function-bind
+│  ├─ publisher: Raynos
+│  ├─ email: raynos2@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/function-bind
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/function-bind/LICENSE
+├─ get-caller-file@1.0.2
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/stefanpenner/get-caller-file
+│  ├─ publisher: Stefan Penner
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/get-caller-file
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/get-caller-file/README.md
+├─ get-caller-file@2.0.5
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/stefanpenner/get-caller-file
+│  ├─ publisher: Stefan Penner
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/yargs/node_modules/get-caller-file
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/yargs/node_modules/get-caller-file/LICENSE.md
+├─ get-func-name@2.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chaijs/get-func-name
+│  ├─ publisher: Jake Luer
+│  ├─ email: jake@alogicalparadox.com
+│  ├─ url: http://alogicalparadox.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/get-func-name
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/get-func-name/LICENSE
+├─ getpass@0.1.7
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/arekinath/node-getpass
+│  ├─ publisher: Alex Wilson
+│  ├─ email: alex.wilson@joyent.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/getpass
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/getpass/LICENSE
+├─ glob-parent@5.1.1
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/gulpjs/glob-parent
+│  ├─ publisher: Gulp Team
+│  ├─ email: team@gulpjs.com
+│  ├─ url: https://gulpjs.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/glob-parent
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/glob-parent/LICENSE
+├─ glob@7.1.3
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/isaacs/node-glob
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/glob
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/glob/LICENSE
+├─ graceful-fs@4.2.4
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/isaacs/node-graceful-fs
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/graceful-fs
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/graceful-fs/LICENSE
+├─ graphlib@2.1.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/dagrejs/graphlib
+│  ├─ publisher: Chris Pettitt
+│  ├─ email: cpettitt@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/graphlib
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/graphlib/LICENSE
+├─ growl@1.10.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/tj/node-growl
+│  ├─ publisher: TJ Holowaychuk
+│  ├─ email: tj@vision-media.ca
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/growl
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/growl/Readme.md
+├─ har-schema@2.0.0
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/ahmadnassri/har-schema
+│  ├─ publisher: Ahmad Nassri
+│  ├─ email: ahmad@ahmadnassri.com
+│  ├─ url: https://www.ahmadnassri.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/har-schema
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/har-schema/LICENSE
+├─ har-validator@5.1.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/ahmadnassri/node-har-validator
+│  ├─ publisher: Ahmad Nassri
+│  ├─ email: ahmad@ahmadnassri.com
+│  ├─ url: https://www.ahmadnassri.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/har-validator
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/har-validator/LICENSE
+├─ has-flag@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/has-flag
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/has-flag
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/has-flag/license
+├─ has-symbols@1.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/ljharb/has-symbols
+│  ├─ publisher: Jordan Harband
+│  ├─ email: ljharb@gmail.com
+│  ├─ url: http://ljharb.codes
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/has-symbols
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/has-symbols/LICENSE
+├─ has@1.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/tarruda/has
+│  ├─ publisher: Thiago de Arruda
+│  ├─ email: tpadilha84@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/has
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/has/LICENSE-MIT
+├─ he@1.2.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/mathiasbynens/he
+│  ├─ publisher: Mathias Bynens
+│  ├─ url: https://mathiasbynens.be/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/he
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/he/LICENSE-MIT.txt
+├─ hosted-git-info@2.8.8
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/npm/hosted-git-info
+│  ├─ publisher: Rebecca Turner
+│  ├─ email: me@re-becca.org
+│  ├─ url: http://re-becca.org
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/hosted-git-info
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/hosted-git-info/LICENSE
+├─ http-errors@1.6.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jshttp/http-errors
+│  ├─ publisher: Jonathan Ong
+│  ├─ email: me@jongleberry.com
+│  ├─ url: http://jongleberry.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/http-errors
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/http-errors/LICENSE
+├─ http-errors@1.7.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jshttp/http-errors
+│  ├─ publisher: Jonathan Ong
+│  ├─ email: me@jongleberry.com
+│  ├─ url: http://jongleberry.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/express/node_modules/http-errors
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/express/node_modules/http-errors/LICENSE
+├─ http-signature@1.2.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/joyent/node-http-signature
+│  ├─ publisher: Joyent, Inc
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/http-signature
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/http-signature/LICENSE
+├─ iconv-lite@0.4.19
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/ashtuchkin/iconv-lite
+│  ├─ publisher: Alexander Shtuchkin
+│  ├─ email: ashtuchkin@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/iconv-lite
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/iconv-lite/LICENSE
+├─ iconv-lite@0.4.24
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/ashtuchkin/iconv-lite
+│  ├─ publisher: Alexander Shtuchkin
+│  ├─ email: ashtuchkin@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/express/node_modules/iconv-lite
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/express/node_modules/iconv-lite/LICENSE
+├─ inflight@1.0.6
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/npm/inflight
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/inflight
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/inflight/LICENSE
+├─ inherits@2.0.3
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/isaacs/inherits
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/inherits
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/inherits/LICENSE
+├─ ipaddr.js@1.9.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/whitequark/ipaddr.js
+│  ├─ publisher: whitequark
+│  ├─ email: whitequark@whitequark.org
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/ipaddr.js
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/ipaddr.js/LICENSE
+├─ is-arrayish@0.3.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/qix-/node-is-arrayish
+│  ├─ publisher: Qix
+│  ├─ url: http://github.com/qix-
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/is-arrayish
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/is-arrayish/LICENSE
+├─ is-binary-path@2.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/is-binary-path
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/is-binary-path
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/is-binary-path/license
+├─ is-buffer@2.0.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/feross/is-buffer
+│  ├─ publisher: Feross Aboukhadijeh
+│  ├─ email: feross@feross.org
+│  ├─ url: https://feross.org
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/is-buffer
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/is-buffer/LICENSE
+├─ is-callable@1.1.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/ljharb/is-callable
+│  ├─ publisher: Jordan Harband
+│  ├─ email: ljharb@gmail.com
+│  ├─ url: http://ljharb.codes
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/is-callable
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/is-callable/LICENSE
+├─ is-core-module@2.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/inspect-js/is-core-module
+│  ├─ publisher: Jordan Harband
+│  ├─ email: ljharb@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/is-core-module
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/is-core-module/LICENSE
+├─ is-date-object@1.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/ljharb/is-date-object
+│  ├─ publisher: Jordan Harband
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/is-date-object
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/is-date-object/LICENSE
+├─ is-extglob@2.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jonschlinkert/is-extglob
+│  ├─ publisher: Jon Schlinkert
+│  ├─ url: https://github.com/jonschlinkert
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/is-extglob
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/is-extglob/LICENSE
+├─ is-fullwidth-code-point@2.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/is-fullwidth-code-point
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/is-fullwidth-code-point
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/is-fullwidth-code-point/license
+├─ is-glob@4.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromatch/is-glob
+│  ├─ publisher: Jon Schlinkert
+│  ├─ url: https://github.com/jonschlinkert
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/is-glob
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/is-glob/LICENSE
+├─ is-number@7.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jonschlinkert/is-number
+│  ├─ publisher: Jon Schlinkert
+│  ├─ url: https://github.com/jonschlinkert
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/is-number
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/is-number/LICENSE
+├─ is-regex@1.0.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/ljharb/is-regex
+│  ├─ publisher: Jordan Harband
+│  ├─ email: ljharb@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/is-regex
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/is-regex/LICENSE
+├─ is-stream@1.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/is-stream
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/is-stream
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/is-stream/license
+├─ is-symbol@1.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/inspect-js/is-symbol
+│  ├─ publisher: Jordan Harband
+│  ├─ email: ljharb@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/is-symbol
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/is-symbol/LICENSE
+├─ is-typedarray@1.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/hughsk/is-typedarray
+│  ├─ publisher: Hugh Kennedy
+│  ├─ email: hughskennedy@gmail.com
+│  ├─ url: http://hughsk.io/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/is-typedarray
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/is-typedarray/LICENSE.md
+├─ isarray@0.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/juliangruber/isarray
+│  ├─ publisher: Julian Gruber
+│  ├─ email: mail@juliangruber.com
+│  ├─ url: http://juliangruber.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/isarray
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/isarray/README.md
+├─ isarray@1.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/juliangruber/isarray
+│  ├─ publisher: Julian Gruber
+│  ├─ email: mail@juliangruber.com
+│  ├─ url: http://juliangruber.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/superagent/node_modules/isarray
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/superagent/node_modules/isarray/README.md
+├─ isexe@2.0.0
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/isaacs/isexe
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/isexe
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/isexe/LICENSE
+├─ isstream@0.1.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/rvagg/isstream
+│  ├─ publisher: Rod Vagg
+│  ├─ email: rod@vagg.org
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/isstream
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/isstream/LICENSE.md
+├─ js-yaml@3.13.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/nodeca/js-yaml
+│  ├─ publisher: Vladimir Zapparov
+│  ├─ email: dervus.grim@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/js-yaml
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/js-yaml/LICENSE
+├─ jsbn@0.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/andyperlitch/jsbn
+│  ├─ publisher: Tom Wu
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/jsbn
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/jsbn/LICENSE
+├─ json-parse-even-better-errors@2.3.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/npm/json-parse-even-better-errors
+│  ├─ publisher: Kat Marchán
+│  ├─ email: kzm@zkat.tech
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/json-parse-even-better-errors
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/json-parse-even-better-errors/LICENSE.md
+├─ json-refs@3.0.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/whitlockjc/json-refs
+│  ├─ publisher: Jeremy Whitlock
+│  ├─ email: jwhitlock@apache.org
+│  ├─ url: https://github.com/whitlockjc
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/json-refs
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/json-refs/LICENSE
+├─ json-schema-traverse@0.3.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/epoberezkin/json-schema-traverse
+│  ├─ publisher: Evgeny Poberezkin
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/json-schema-traverse
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/json-schema-traverse/LICENSE
+├─ json-schema-traverse@0.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/epoberezkin/json-schema-traverse
+│  ├─ publisher: Evgeny Poberezkin
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/har-validator/node_modules/json-schema-traverse
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/har-validator/node_modules/json-schema-traverse/LICENSE
+├─ json-schema@0.2.3
+│  ├─ licenses
+│  │  ├─ 0: AFLv2.1
+│  │  └─ 1: BSD
+│  ├─ repository: https://github.com/kriszyp/json-schema
+│  ├─ publisher: Kris Zyp
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/json-schema
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/json-schema/README.md
+├─ json-stringify-safe@5.0.1
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/isaacs/json-stringify-safe
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/json-stringify-safe
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/json-stringify-safe/LICENSE
+├─ json5@0.5.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/aseemk/json5
+│  ├─ publisher: Aseem Kishore
+│  ├─ email: aseem.kishore@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/json5
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/json5/LICENSE.md
+├─ jsprim@1.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/joyent/node-jsprim
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/jsprim
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/jsprim/LICENSE
+├─ kuler@1.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/3rd-Eden/kuler
+│  ├─ publisher: Arnout Kazemier
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/kuler
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/kuler/LICENSE
+├─ license-checker@25.0.1
+│  ├─ licenses: BSD-3-Clause
+│  ├─ repository: https://github.com/davglass/license-checker
+│  ├─ publisher: Dav Glass
+│  ├─ email: davglass@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/license-checker
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/license-checker/LICENSE
+├─ locate-path@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/locate-path
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/locate-path
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/locate-path/license
+├─ lodash._arraypool@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash._arraypool
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash._arraypool/LICENSE.txt
+├─ lodash._basebind@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash._basebind
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash._basebind/LICENSE.txt
+├─ lodash._baseclone@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash._baseclone
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash._baseclone/LICENSE.txt
+├─ lodash._basecreate@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash._basecreate
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash._basecreate/LICENSE.txt
+├─ lodash._basecreatecallback@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash._basecreatecallback
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash._basecreatecallback/LICENSE.txt
+├─ lodash._basecreatewrapper@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash._basecreatewrapper
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash._basecreatewrapper/LICENSE.txt
+├─ lodash._createwrapper@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash._createwrapper
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash._createwrapper/LICENSE.txt
+├─ lodash._getarray@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash._getarray
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash._getarray/LICENSE.txt
+├─ lodash._isnative@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash._isnative
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash._isnative/LICENSE.txt
+├─ lodash._maxpoolsize@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash._maxpoolsize
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash._maxpoolsize/LICENSE.txt
+├─ lodash._objecttypes@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash._objecttypes
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash._objecttypes/LICENSE.txt
+├─ lodash._releasearray@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash._releasearray
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash._releasearray/LICENSE.txt
+├─ lodash._setbinddata@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash._setbinddata
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash._setbinddata/LICENSE.txt
+├─ lodash._shimkeys@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash._shimkeys
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash._shimkeys/LICENSE.txt
+├─ lodash._slice@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash._slice
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash._slice/LICENSE.txt
+├─ lodash.assign@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash.assign
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash.assign/LICENSE.txt
+├─ lodash.bind@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash.bind
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash.bind/LICENSE.txt
+├─ lodash.clonedeep@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/swagger-converter/node_modules/lodash.clonedeep
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/swagger-converter/node_modules/lodash.clonedeep/LICENSE.txt
+├─ lodash.clonedeep@4.5.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash.clonedeep
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash.clonedeep/LICENSE
+├─ lodash.foreach@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash.foreach
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash.foreach/LICENSE.txt
+├─ lodash.forown@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash.forown
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash.forown/LICENSE.txt
+├─ lodash.get@4.4.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash.get
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash.get/LICENSE
+├─ lodash.identity@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash.identity
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash.identity/LICENSE.txt
+├─ lodash.isarray@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash.isarray
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash.isarray/LICENSE.txt
+├─ lodash.isequal@4.5.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash.isequal
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash.isequal/LICENSE
+├─ lodash.isfunction@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash.isfunction
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash.isfunction/LICENSE.txt
+├─ lodash.isobject@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash.isobject
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash.isobject/LICENSE.txt
+├─ lodash.keys@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash.keys
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash.keys/LICENSE.txt
+├─ lodash.noop@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash.noop
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash.noop/LICENSE.txt
+├─ lodash.support@2.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash-cli
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ url: http://allyoucanleet.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash.support
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash.support/LICENSE.txt
+├─ lodash@4.17.15
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/lodash/lodash
+│  ├─ publisher: John-David Dalton
+│  ├─ email: john.david.dalton@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/lodash
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/lodash/LICENSE
+├─ log-symbols@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/log-symbols
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/log-symbols
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/log-symbols/license
+├─ logform@2.1.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/winstonjs/logform
+│  ├─ publisher: Charlie Robbins
+│  ├─ email: charlie.robbins@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/logform
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/logform/LICENSE
+├─ media-typer@0.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jshttp/media-typer
+│  ├─ publisher: Douglas Christopher Wilson
+│  ├─ email: doug@somethingdoug.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/media-typer
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/media-typer/LICENSE
+├─ merge-descriptors@1.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/component/merge-descriptors
+│  ├─ publisher: Jonathan Ong
+│  ├─ email: me@jongleberry.com
+│  ├─ url: http://jongleberry.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/merge-descriptors
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/merge-descriptors/LICENSE
+├─ methods@1.1.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jshttp/methods
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/methods
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/methods/LICENSE
+├─ mime-db@1.30.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jshttp/mime-db
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/mime-db
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/mime-db/LICENSE
+├─ mime-db@1.43.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jshttp/mime-db
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/accepts/node_modules/mime-db
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/accepts/node_modules/mime-db/LICENSE
+├─ mime-types@2.1.17
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jshttp/mime-types
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/mime-types
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/mime-types/LICENSE
+├─ mime-types@2.1.26
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jshttp/mime-types
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/accepts/node_modules/mime-types
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/accepts/node_modules/mime-types/LICENSE
+├─ mime@1.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/broofa/node-mime
+│  ├─ publisher: Robert Kieffer
+│  ├─ email: robert@broofa.com
+│  ├─ url: http://github.com/broofa
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/mime
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/mime/LICENSE
+├─ mime@1.6.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/broofa/node-mime
+│  ├─ publisher: Robert Kieffer
+│  ├─ email: robert@broofa.com
+│  ├─ url: http://github.com/broofa
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/express/node_modules/mime
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/express/node_modules/mime/LICENSE
+├─ minimatch@3.0.4
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/isaacs/minimatch
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/minimatch
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/minimatch/LICENSE
+├─ minimist@1.2.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/substack/minimist
+│  ├─ publisher: James Halliday
+│  ├─ email: mail@substack.net
+│  ├─ url: http://substack.net
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/mkdirp/node_modules/minimist
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/mkdirp/node_modules/minimist/LICENSE
+├─ mkdirp@0.5.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/substack/node-mkdirp
+│  ├─ publisher: James Halliday
+│  ├─ email: mail@substack.net
+│  ├─ url: http://substack.net
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/mkdirp
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/mkdirp/LICENSE
+├─ mocha@7.1.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/mochajs/mocha
+│  ├─ publisher: TJ Holowaychuk
+│  ├─ email: tj@vision-media.ca
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/mocha
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/mocha/LICENSE
+├─ mock-require@3.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/boblauer/mock-require
+│  ├─ publisher: Bob Lauer
+│  ├─ email: rlauer@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/mock-require
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/mock-require/LICENSE
+├─ moment@2.19.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/moment/moment
+│  ├─ publisher: Iskren Ivov Chernev
+│  ├─ email: iskren.chernev@gmail.com
+│  ├─ url: https://github.com/ichernev
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/moment
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/moment/LICENSE
+├─ ms@2.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/zeit/ms
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/ms
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/ms/license.md
+├─ ms@2.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/zeit/ms
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/express/node_modules/ms
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/express/node_modules/ms/license.md
+├─ ms@2.1.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/zeit/ms
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/license-checker/node_modules/ms
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/license-checker/node_modules/ms/license.md
+├─ multer@1.4.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/expressjs/multer
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/multer
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/multer/LICENSE
+├─ native-promise-only@0.8.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/getify/native-promise-only
+│  ├─ publisher: Kyle Simpson
+│  ├─ email: getify@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/native-promise-only
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/native-promise-only/README.md
+├─ negotiator@0.6.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jshttp/negotiator
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/negotiator
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/negotiator/LICENSE
+├─ neo4j-driver@4.0.1
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/neo4j/neo4j-javascript-driver
+│  ├─ publisher: Neo4j
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/neo4j-driver
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/neo4j-driver/LICENSE
+├─ node-environment-flags@1.0.6
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/boneskull/node-environment-flags
+│  ├─ publisher: Christopher Hiller
+│  ├─ email: boneskull@boneskull.com
+│  ├─ url: https://boneskull.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/node-environment-flags
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/node-environment-flags/LICENSE
+├─ nopt@4.0.3
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/npm/nopt
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/nopt
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/nopt/LICENSE
+├─ normalize-package-data@2.5.0
+│  ├─ licenses: BSD-2-Clause
+│  ├─ repository: https://github.com/npm/normalize-package-data
+│  ├─ publisher: Meryn Stol
+│  ├─ email: merynstol@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/normalize-package-data
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/normalize-package-data/LICENSE
+├─ normalize-path@2.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jonschlinkert/normalize-path
+│  ├─ publisher: Jon Schlinkert
+│  ├─ url: https://github.com/jonschlinkert
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/normalize-path
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/normalize-path/LICENSE
+├─ normalize-path@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jonschlinkert/normalize-path
+│  ├─ publisher: Jon Schlinkert
+│  ├─ url: https://github.com/jonschlinkert
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/anymatch/node_modules/normalize-path
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/anymatch/node_modules/normalize-path/LICENSE
+├─ npm-normalize-package-bin@1.0.1
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/npm/npm-normalize-package-bin
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: https://izs.me
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/npm-normalize-package-bin
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/npm-normalize-package-bin/LICENSE
+├─ oauth-sign@0.9.0
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/mikeal/oauth-sign
+│  ├─ publisher: Mikeal Rogers
+│  ├─ email: mikeal.rogers@gmail.com
+│  ├─ url: http://www.futurealoof.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/oauth-sign
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/oauth-sign/LICENSE
+├─ object-assign@4.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/object-assign
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/object-assign
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/object-assign/license
+├─ object-inspect@1.7.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/substack/object-inspect
+│  ├─ publisher: James Halliday
+│  ├─ email: mail@substack.net
+│  ├─ url: http://substack.net
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/object-inspect
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/object-inspect/LICENSE
+├─ object-keys@1.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/ljharb/object-keys
+│  ├─ publisher: Jordan Harband
+│  ├─ email: ljharb@gmail.com
+│  ├─ url: http://ljharb.codes
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/object-keys
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/object-keys/LICENSE
+├─ object.assign@4.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/ljharb/object.assign
+│  ├─ publisher: Jordan Harband
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/object.assign
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/object.assign/LICENSE
+├─ object.getownpropertydescriptors@2.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/es-shims/object.getownpropertydescriptors
+│  ├─ publisher: Jordan Harband
+│  ├─ email: ljharb@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/object.getownpropertydescriptors
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/object.getownpropertydescriptors/LICENSE
+├─ on-finished@2.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jshttp/on-finished
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/on-finished
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/on-finished/LICENSE
+├─ once@1.4.0
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/isaacs/once
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/once
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/once/LICENSE
+├─ one-time@0.0.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/unshiftio/one-time
+│  ├─ publisher: Arnout Kazemier
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/one-time
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/one-time/LICENSE
+├─ os-homedir@1.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/os-homedir
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/os-homedir
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/os-homedir/license
+├─ os-tmpdir@1.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/os-tmpdir
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/os-tmpdir
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/os-tmpdir/license
+├─ osenv@0.1.5
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/npm/osenv
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/osenv
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/osenv/LICENSE
+├─ p-limit@2.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/p-limit
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/p-limit
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/p-limit/license
+├─ p-locate@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/p-locate
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/p-locate
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/p-locate/license
+├─ p-try@2.2.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/p-try
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/p-try
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/p-try/license
+├─ parseurl@1.3.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/pillarjs/parseurl
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/parseurl
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/parseurl/LICENSE
+├─ parseurl@1.3.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/pillarjs/parseurl
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/finalhandler/node_modules/parseurl
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/finalhandler/node_modules/parseurl/LICENSE
+├─ path-exists@3.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/path-exists
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/path-exists
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/path-exists/license
+├─ path-is-absolute@1.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/path-is-absolute
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/path-is-absolute
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/path-is-absolute/license
+├─ path-loader@1.0.4
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/whitlockjc/path-loader
+│  ├─ publisher: Jeremy Whitlock
+│  ├─ email: jwhitlock@apache.org
+│  ├─ url: https://github.com/whitlockjc
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/path-loader
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/path-loader/LICENSE
+├─ path-parse@1.0.6
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jbgutierrez/path-parse
+│  ├─ publisher: Javier Blanco
+│  ├─ email: http://jbgutierrez.info
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/path-parse
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/path-parse/LICENSE
+├─ path-to-regexp@0.1.7
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/component/path-to-regexp
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/path-to-regexp
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/path-to-regexp/LICENSE
+├─ path-to-regexp@2.2.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/pillarjs/path-to-regexp
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/swagger-tools/node_modules/path-to-regexp
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/swagger-tools/node_modules/path-to-regexp/LICENSE
+├─ pathval@1.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chaijs/pathval
+│  ├─ publisher: Veselin Todorov
+│  ├─ email: hi@vesln.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/pathval
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/pathval/LICENSE
+├─ performance-now@2.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/braveg1rl/performance-now
+│  ├─ publisher: Braveg1rl
+│  ├─ email: braveg1rl@outlook.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/performance-now
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/performance-now/license.txt
+├─ picomatch@2.2.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromatch/picomatch
+│  ├─ publisher: Jon Schlinkert
+│  ├─ url: https://github.com/jonschlinkert
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/picomatch
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/picomatch/LICENSE
+├─ process-nextick-args@2.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/calvinmetcalf/process-nextick-args
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/process-nextick-args
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/process-nextick-args/license.md
+├─ proxy-addr@2.0.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jshttp/proxy-addr
+│  ├─ publisher: Douglas Christopher Wilson
+│  ├─ email: doug@somethingdoug.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/proxy-addr
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/proxy-addr/LICENSE
+├─ psl@1.1.29
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/wrangr/psl
+│  ├─ publisher: Lupo Montero
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/psl
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/psl/README.md
+├─ punycode@1.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/bestiejs/punycode.js
+│  ├─ publisher: Mathias Bynens
+│  ├─ url: https://mathiasbynens.be/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/tough-cookie/node_modules/punycode
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/tough-cookie/node_modules/punycode/LICENSE-MIT.txt
+├─ punycode@2.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/bestiejs/punycode.js
+│  ├─ publisher: Mathias Bynens
+│  ├─ url: https://mathiasbynens.be/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/punycode
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/punycode/LICENSE-MIT.txt
+├─ punycode@2.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/bestiejs/punycode.js
+│  ├─ publisher: Mathias Bynens
+│  ├─ url: https://mathiasbynens.be/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/request/node_modules/punycode
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/request/node_modules/punycode/LICENSE-MIT.txt
+├─ qs@6.5.1
+│  ├─ licenses: BSD-3-Clause
+│  ├─ repository: https://github.com/ljharb/qs
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/qs
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/qs/LICENSE
+├─ qs@6.5.2
+│  ├─ licenses: BSD-3-Clause
+│  ├─ repository: https://github.com/ljharb/qs
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/request/node_modules/qs
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/request/node_modules/qs/LICENSE
+├─ qs@6.7.0
+│  ├─ licenses: BSD-3-Clause
+│  ├─ repository: https://github.com/ljharb/qs
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/express/node_modules/qs
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/express/node_modules/qs/LICENSE
+├─ range-parser@1.2.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jshttp/range-parser
+│  ├─ publisher: TJ Holowaychuk
+│  ├─ email: tj@vision-media.ca
+│  ├─ url: http://tjholowaychuk.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/range-parser
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/range-parser/LICENSE
+├─ range-parser@1.2.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jshttp/range-parser
+│  ├─ publisher: TJ Holowaychuk
+│  ├─ email: tj@vision-media.ca
+│  ├─ url: http://tjholowaychuk.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/express/node_modules/range-parser
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/express/node_modules/range-parser/LICENSE
+├─ raw-body@2.3.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/stream-utils/raw-body
+│  ├─ publisher: Jonathan Ong
+│  ├─ email: me@jongleberry.com
+│  ├─ url: http://jongleberry.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/raw-body
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/raw-body/LICENSE
+├─ raw-body@2.4.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/stream-utils/raw-body
+│  ├─ publisher: Jonathan Ong
+│  ├─ email: me@jongleberry.com
+│  ├─ url: http://jongleberry.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/express/node_modules/raw-body
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/express/node_modules/raw-body/LICENSE
+├─ read-installed@4.0.3
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/isaacs/read-installed
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/read-installed
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/read-installed/LICENSE
+├─ read-package-json@2.1.2
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/npm/read-package-json
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/read-package-json
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/read-package-json/LICENSE
+├─ readable-stream@1.1.14
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/isaacs/readable-stream
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/readable-stream
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/readable-stream/LICENSE
+├─ readable-stream@2.3.6
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/nodejs/readable-stream
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/superagent/node_modules/readable-stream
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/superagent/node_modules/readable-stream/LICENSE
+├─ readable-stream@2.3.7
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/nodejs/readable-stream
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/concat-stream/node_modules/readable-stream
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/concat-stream/node_modules/readable-stream/LICENSE
+├─ readable-stream@3.4.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/nodejs/readable-stream
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/winston/node_modules/readable-stream
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/winston/node_modules/readable-stream/LICENSE
+├─ readdir-scoped-modules@1.1.0
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/npm/readdir-scoped-modules
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/readdir-scoped-modules
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/readdir-scoped-modules/LICENSE
+├─ readdirp@3.2.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/paulmillr/readdirp
+│  ├─ publisher: Thorsten Lorenz
+│  ├─ email: thlorenz@gmx.de
+│  ├─ url: thlorenz.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/readdirp
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/readdirp/LICENSE
+├─ redeyed@1.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/thlorenz/redeyed
+│  ├─ publisher: Thorsten Lorenz
+│  ├─ email: thlorenz@gmx.de
+│  ├─ url: thlorenz.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/redeyed
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/redeyed/LICENSE
+├─ regenerator-runtime@0.13.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime
+│  ├─ publisher: Ben Newman
+│  ├─ email: bn@cs.stanford.edu
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/regenerator-runtime
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/regenerator-runtime/LICENSE
+├─ remove-trailing-separator@1.1.0
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/darsain/remove-trailing-separator
+│  ├─ publisher: darsain
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/remove-trailing-separator
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/remove-trailing-separator/license
+├─ request-promise-core@1.1.1
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/request/promise-core
+│  ├─ publisher: Nicolai Kamenzky
+│  ├─ url: https://github.com/analog-nico
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/request-promise-core
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/request-promise-core/LICENSE
+├─ request-promise@4.2.2
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/request/request-promise
+│  ├─ publisher: Nicolai Kamenzky
+│  ├─ url: https://github.com/analog-nico
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/request-promise
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/request-promise/LICENSE
+├─ request@2.88.2
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/request/request
+│  ├─ publisher: Mikeal Rogers
+│  ├─ email: mikeal.rogers@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/request
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/request/LICENSE
+├─ require-directory@2.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/troygoode/node-require-directory
+│  ├─ publisher: Troy Goode
+│  ├─ email: troygoode@gmail.com
+│  ├─ url: http://github.com/troygoode/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/require-directory
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/require-directory/LICENSE
+├─ require-main-filename@2.0.0
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/yargs/require-main-filename
+│  ├─ publisher: Ben Coe
+│  ├─ email: ben@npmjs.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/require-main-filename
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/require-main-filename/LICENSE.txt
+├─ resolve@1.18.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/browserify/resolve
+│  ├─ publisher: James Halliday
+│  ├─ email: mail@substack.net
+│  ├─ url: http://substack.net
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/resolve
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/resolve/LICENSE
+├─ rxjs@6.5.4
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/reactivex/rxjs
+│  ├─ publisher: Ben Lesh
+│  ├─ email: ben@benlesh.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/rxjs
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/rxjs/LICENSE.txt
+├─ safe-buffer@5.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/feross/safe-buffer
+│  ├─ publisher: Feross Aboukhadijeh
+│  ├─ email: feross@feross.org
+│  ├─ url: http://feross.org
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/safe-buffer
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/safe-buffer/LICENSE
+├─ safe-buffer@5.1.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/feross/safe-buffer
+│  ├─ publisher: Feross Aboukhadijeh
+│  ├─ email: feross@feross.org
+│  ├─ url: http://feross.org
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/content-disposition/node_modules/safe-buffer
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/content-disposition/node_modules/safe-buffer/LICENSE
+├─ safe-buffer@5.2.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/feross/safe-buffer
+│  ├─ publisher: Feross Aboukhadijeh
+│  ├─ email: feross@feross.org
+│  ├─ url: http://feross.org
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/request/node_modules/safe-buffer
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/request/node_modules/safe-buffer/LICENSE
+├─ safer-buffer@2.1.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/ChALkeR/safer-buffer
+│  ├─ publisher: Nikita Skovoroda
+│  ├─ email: chalkerx@gmail.com
+│  ├─ url: https://github.com/ChALkeR
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/safer-buffer
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/safer-buffer/LICENSE
+├─ semver@5.7.1
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/npm/node-semver
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/semver
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/semver/LICENSE
+├─ send@0.16.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/pillarjs/send
+│  ├─ publisher: TJ Holowaychuk
+│  ├─ email: tj@vision-media.ca
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/send
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/send/LICENSE
+├─ send@0.17.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/pillarjs/send
+│  ├─ publisher: TJ Holowaychuk
+│  ├─ email: tj@vision-media.ca
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/express/node_modules/send
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/express/node_modules/send/LICENSE
+├─ serve-static@1.13.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/expressjs/serve-static
+│  ├─ publisher: Douglas Christopher Wilson
+│  ├─ email: doug@somethingdoug.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/serve-static
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/serve-static/LICENSE
+├─ serve-static@1.14.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/expressjs/serve-static
+│  ├─ publisher: Douglas Christopher Wilson
+│  ├─ email: doug@somethingdoug.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/express/node_modules/serve-static
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/express/node_modules/serve-static/LICENSE
+├─ set-blocking@2.0.0
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/yargs/set-blocking
+│  ├─ publisher: Ben Coe
+│  ├─ email: ben@npmjs.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/set-blocking
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/set-blocking/LICENSE.txt
+├─ setprototypeof@1.0.3
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/wesleytodd/setprototypeof
+│  ├─ publisher: Wes Todd
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/http-errors/node_modules/setprototypeof
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/http-errors/node_modules/setprototypeof/LICENSE
+├─ setprototypeof@1.1.1
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/wesleytodd/setprototypeof
+│  ├─ publisher: Wes Todd
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/setprototypeof
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/setprototypeof/LICENSE
+├─ simple-mock@0.8.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jupiter/simple-mock
+│  ├─ publisher: Pieter Raubenheimer
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/simple-mock
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/simple-mock/LICENSE
+├─ simple-swizzle@0.2.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/qix-/node-simple-swizzle
+│  ├─ publisher: Qix
+│  ├─ url: http://github.com/qix-
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/simple-swizzle
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/simple-swizzle/LICENSE
+├─ slash@1.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/slash
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: http://sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/slash
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/slash/readme.md
+├─ slide@1.1.6
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/isaacs/slide-flow-control
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/slide
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/slide/LICENSE
+├─ spark-md5@3.0.0
+│  ├─ licenses: WTFPL
+│  ├─ repository: https://github.com/satazor/js-spark-md5
+│  ├─ publisher: André Cruz
+│  ├─ email: andremiguelcruz@msn.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/spark-md5
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/spark-md5/LICENSE
+├─ spdx-compare@1.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/kemitchell/spdx-compare.js
+│  ├─ publisher: Kyle E. Mitchell
+│  ├─ email: kyle@kemitchell.com
+│  ├─ url: https://kemitchell.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/spdx-compare
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/spdx-compare/LICENSE.md
+├─ spdx-correct@3.1.1
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/jslicense/spdx-correct.js
+│  ├─ publisher: Kyle E. Mitchell
+│  ├─ email: kyle@kemitchell.com
+│  ├─ url: https://kemitchell.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/spdx-correct
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/spdx-correct/LICENSE
+├─ spdx-exceptions@2.3.0
+│  ├─ licenses: CC-BY-3.0
+│  ├─ repository: https://github.com/kemitchell/spdx-exceptions.json
+│  ├─ publisher: The Linux Foundation
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/spdx-exceptions
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/spdx-exceptions/README.md
+├─ spdx-expression-parse@3.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jslicense/spdx-expression-parse.js
+│  ├─ publisher: Kyle E. Mitchell
+│  ├─ email: kyle@kemitchell.com
+│  ├─ url: https://kemitchell.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/spdx-expression-parse
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/spdx-expression-parse/LICENSE
+├─ spdx-license-ids@3.0.6
+│  ├─ licenses: CC0-1.0
+│  ├─ repository: https://github.com/jslicense/spdx-license-ids
+│  ├─ publisher: Shinnosuke Watanabe
+│  ├─ url: https://github.com/shinnn
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/spdx-license-ids
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/spdx-license-ids/README.md
+├─ spdx-ranges@2.1.1
+│  ├─ licenses: (MIT AND CC-BY-3.0)
+│  ├─ repository: https://github.com/kemitchell/spdx-ranges.js
+│  ├─ publisher: The Linux Foundation
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/spdx-ranges
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/spdx-ranges/LICENSE.md
+├─ spdx-satisfies@4.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/kemitchell/spdx-satisfies.js
+│  ├─ publisher: Kyle E. Mitchell
+│  ├─ email: kyle@kemitchell.com
+│  ├─ url: https://kemitchell.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/spdx-satisfies
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/spdx-satisfies/LICENSE
+├─ sprintf-js@1.0.3
+│  ├─ licenses: BSD-3-Clause
+│  ├─ repository: https://github.com/alexei/sprintf.js
+│  ├─ publisher: Alexandru Marasteanu
+│  ├─ email: hello@alexei.ro
+│  ├─ url: http://alexei.ro/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/sprintf-js
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/sprintf-js/LICENSE
+├─ sshpk@1.16.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/joyent/node-sshpk
+│  ├─ publisher: Joyent, Inc
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/sshpk
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/sshpk/LICENSE
+├─ stack-trace@0.0.10
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/felixge/node-stack-trace
+│  ├─ publisher: Felix Geisendörfer
+│  ├─ email: felix@debuggable.com
+│  ├─ url: http://debuggable.com/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/stack-trace
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/stack-trace/License
+├─ statuses@1.3.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jshttp/statuses
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/statuses
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/statuses/LICENSE
+├─ statuses@1.5.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jshttp/statuses
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/express/node_modules/statuses
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/express/node_modules/statuses/LICENSE
+├─ stealthy-require@1.1.1
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/analog-nico/stealthy-require
+│  ├─ publisher: Nicolai Kamenzky
+│  ├─ url: https://github.com/analog-nico
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/stealthy-require
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/stealthy-require/LICENSE
+├─ streamsearch@0.1.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/mscdex/streamsearch
+│  ├─ publisher: Brian White
+│  ├─ email: mscdex@mscdex.net
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/streamsearch
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/streamsearch/LICENSE
+├─ string-width@2.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/string-width
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/string-width
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/string-width/license
+├─ string-width@3.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/string-width
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/cliui/node_modules/string-width
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/cliui/node_modules/string-width/license
+├─ string.prototype.trimend@1.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/es-shims/String.prototype.trimEnd
+│  ├─ publisher: Jordan Harband
+│  ├─ email: ljharb@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/string.prototype.trimend
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/string.prototype.trimend/LICENSE
+├─ string.prototype.trimleft@2.1.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/es-shims/String.prototype.trimLeft
+│  ├─ publisher: Jordan Harband
+│  ├─ email: ljharb@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/string.prototype.trimleft
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/string.prototype.trimleft/LICENSE
+├─ string.prototype.trimright@2.1.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/es-shims/String.prototype.trimRight
+│  ├─ publisher: Jordan Harband
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/string.prototype.trimright
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/string.prototype.trimright/LICENSE
+├─ string.prototype.trimstart@1.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/es-shims/String.prototype.trimStart
+│  ├─ publisher: Jordan Harband
+│  ├─ email: ljharb@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/string.prototype.trimstart
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/string.prototype.trimstart/LICENSE
+├─ string@3.3.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jprichardson/string.js
+│  ├─ publisher: JP Richardson
+│  ├─ email: jprichardson@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/string
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/string/README.md
+├─ string_decoder@0.10.31
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/rvagg/string_decoder
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/string_decoder
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/string_decoder/LICENSE
+├─ string_decoder@1.1.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/nodejs/string_decoder
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/superagent/node_modules/string_decoder
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/superagent/node_modules/string_decoder/LICENSE
+├─ string_decoder@1.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/nodejs/string_decoder
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/winston/node_modules/string_decoder
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/winston/node_modules/string_decoder/LICENSE
+├─ strip-ansi@4.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chalk/strip-ansi
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/strip-ansi
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/strip-ansi/license
+├─ strip-ansi@5.2.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chalk/strip-ansi
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/cliui/node_modules/strip-ansi
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/cliui/node_modules/strip-ansi/license
+├─ strip-json-comments@2.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/sindresorhus/strip-json-comments
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/strip-json-comments
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/strip-json-comments/license
+├─ superagent@3.8.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/visionmedia/superagent
+│  ├─ publisher: TJ Holowaychuk
+│  ├─ email: tj@vision-media.ca
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/superagent
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/superagent/LICENSE
+├─ supports-color@5.5.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chalk/supports-color
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/chalk/node_modules/supports-color
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/chalk/node_modules/supports-color/license
+├─ supports-color@6.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chalk/supports-color
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/supports-color
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/supports-color/license
+├─ swagger-converter@0.1.7
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/apigee-127/swagger-converter
+│  ├─ publisher: Mohsen Azimi
+│  ├─ email: me@azimi.me
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/swagger-converter
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/swagger-converter/LICENSE
+├─ swagger-tools@0.10.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/apigee-127/swagger-tools
+│  ├─ publisher: Jeremy Whitlock
+│  ├─ email: jwhitlock@apache.org
+│  ├─ url: https://github.com/whitlockjc
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/swagger-tools
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/swagger-tools/LICENSE
+├─ text-encoding-utf-8@1.0.2
+│  ├─ licenses: Public Domain
+│  ├─ repository: https://github.com/arv/text-encoding-utf-8
+│  ├─ publisher: Erik Arvidsson
+│  ├─ email: erik.arvidsson@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/text-encoding-utf-8
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/text-encoding-utf-8/LICENSE.md
+├─ text-hex@1.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/3rd-Eden/text-hex
+│  ├─ publisher: Arnout Kazemier
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/text-hex
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/text-hex/LICENSE
+├─ through@2.3.8
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/dominictarr/through
+│  ├─ publisher: Dominic Tarr
+│  ├─ email: dominic.tarr@gmail.com
+│  ├─ url: dominictarr.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/through
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/through/LICENSE.APACHE2
+├─ to-regex-range@5.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/micromatch/to-regex-range
+│  ├─ publisher: Jon Schlinkert
+│  ├─ url: https://github.com/jonschlinkert
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/to-regex-range
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/to-regex-range/LICENSE
+├─ toidentifier@1.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/component/toidentifier
+│  ├─ publisher: Douglas Christopher Wilson
+│  ├─ email: doug@somethingdoug.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/toidentifier
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/toidentifier/LICENSE
+├─ tough-cookie@2.4.3
+│  ├─ licenses: BSD-3-Clause
+│  ├─ repository: https://github.com/salesforce/tough-cookie
+│  ├─ publisher: Jeremy Stashewsky
+│  ├─ email: jstash@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/tough-cookie
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/tough-cookie/LICENSE
+├─ tough-cookie@2.5.0
+│  ├─ licenses: BSD-3-Clause
+│  ├─ repository: https://github.com/salesforce/tough-cookie
+│  ├─ publisher: Jeremy Stashewsky
+│  ├─ email: jstash@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/request/node_modules/tough-cookie
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/request/node_modules/tough-cookie/LICENSE
+├─ traverse@0.6.6
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/substack/js-traverse
+│  ├─ publisher: James Halliday
+│  ├─ email: mail@substack.net
+│  ├─ url: http://substack.net
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/traverse
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/traverse/LICENSE
+├─ treeify@1.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/notatestuser/treeify
+│  ├─ publisher: Luke Plaster
+│  ├─ email: notatestuser@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/treeify
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/treeify/LICENSE
+├─ triple-beam@1.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/winstonjs/triple-beam
+│  ├─ publisher: Charlie Robbins
+│  ├─ email: charlie.robbins@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/triple-beam
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/triple-beam/LICENSE
+├─ tslib@1.10.0
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/Microsoft/tslib
+│  ├─ publisher: Microsoft Corp.
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/tslib
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/tslib/LICENSE.txt
+├─ tunnel-agent@0.6.0
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/mikeal/tunnel-agent
+│  ├─ publisher: Mikeal Rogers
+│  ├─ email: mikeal.rogers@gmail.com
+│  ├─ url: http://www.futurealoof.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/tunnel-agent
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/tunnel-agent/LICENSE
+├─ tweetnacl@0.14.5
+│  ├─ licenses: Unlicense
+│  ├─ repository: https://github.com/dchest/tweetnacl-js
+│  ├─ publisher: TweetNaCl-js contributors
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/tweetnacl
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/tweetnacl/LICENSE
+├─ type-detect@4.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chaijs/type-detect
+│  ├─ publisher: Jake Luer
+│  ├─ email: jake@alogicalparadox.com
+│  ├─ url: http://alogicalparadox.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/type-detect
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/type-detect/LICENSE
+├─ type-is@1.6.15
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jshttp/type-is
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/type-is
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/type-is/LICENSE
+├─ type-is@1.6.18
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jshttp/type-is
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/express/node_modules/type-is
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/express/node_modules/type-is/LICENSE
+├─ typedarray@0.0.6
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/substack/typedarray
+│  ├─ publisher: James Halliday
+│  ├─ email: mail@substack.net
+│  ├─ url: http://substack.net
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/typedarray
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/typedarray/LICENSE
+├─ unpipe@1.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/stream-utils/unpipe
+│  ├─ publisher: Douglas Christopher Wilson
+│  ├─ email: doug@somethingdoug.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/unpipe
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/unpipe/LICENSE
+├─ uri-js@3.0.2
+│  ├─ licenses: BSD-2-Clause
+│  ├─ repository: https://github.com/garycourt/uri-js
+│  ├─ publisher: Gary Court
+│  ├─ email: gary.court@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/uri-js
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/uri-js/README.md
+├─ uri-js@4.2.1
+│  ├─ licenses: BSD-2-Clause
+│  ├─ repository: https://github.com/garycourt/uri-js
+│  ├─ publisher: Gary Court
+│  ├─ email: gary.court@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/ajv/node_modules/uri-js
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/ajv/node_modules/uri-js/README.md
+├─ uri-js@4.2.2
+│  ├─ licenses: BSD-2-Clause
+│  ├─ repository: https://github.com/garycourt/uri-js
+│  ├─ publisher: Gary Court
+│  ├─ email: gary.court@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/neo4j-driver/node_modules/uri-js
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/neo4j-driver/node_modules/uri-js/README.md
+├─ util-deprecate@1.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/TooTallNate/util-deprecate
+│  ├─ publisher: Nathan Rajlich
+│  ├─ email: nathan@tootallnate.net
+│  ├─ url: http://n8.io/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/util-deprecate
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/util-deprecate/LICENSE
+├─ util-extend@1.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/isaacs/util-extend
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/util-extend
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/util-extend/LICENSE
+├─ utils-merge@1.0.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jaredhanson/utils-merge
+│  ├─ publisher: Jared Hanson
+│  ├─ email: jaredhanson@gmail.com
+│  ├─ url: http://www.jaredhanson.net/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/utils-merge
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/utils-merge/LICENSE
+├─ uuid@3.2.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/kelektiv/node-uuid
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/uuid
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/uuid/LICENSE.md
+├─ uuid@3.4.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/uuidjs/uuid
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/request/node_modules/uuid
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/request/node_modules/uuid/LICENSE.md
+├─ validate-npm-package-license@3.0.4
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/kemitchell/validate-npm-package-license.js
+│  ├─ publisher: Kyle E. Mitchell
+│  ├─ email: kyle@kemitchell.com
+│  ├─ url: https://kemitchell.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/validate-npm-package-license
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/validate-npm-package-license/LICENSE
+├─ validator@7.2.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chriso/validator.js
+│  ├─ publisher: Chris O'Hara
+│  ├─ email: cohara87@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/validator
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/validator/LICENSE
+├─ validator@9.4.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chriso/validator.js
+│  ├─ publisher: Chris O'Hara
+│  ├─ email: cohara87@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/z-schema/node_modules/validator
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/z-schema/node_modules/validator/LICENSE
+├─ varify@0.2.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/thlorenz/varify
+│  ├─ publisher: Thorsten Lorenz
+│  ├─ email: thlorenz@gmx.de
+│  ├─ url: http://thlorenz.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/varify
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/varify/LICENSE
+├─ vary@1.1.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jshttp/vary
+│  ├─ publisher: Douglas Christopher Wilson
+│  ├─ email: doug@somethingdoug.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/vary
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/vary/LICENSE
+├─ verror@1.10.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/davepacheco/node-verror
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/verror
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/verror/LICENSE
+├─ which-module@2.0.0
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/nexdrew/which-module
+│  ├─ publisher: nexdrew
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/which-module
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/which-module/LICENSE
+├─ which@1.3.1
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/isaacs/node-which
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/which
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/which/LICENSE
+├─ wide-align@1.1.3
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/iarna/wide-align
+│  ├─ publisher: Rebecca Turner
+│  ├─ email: me@re-becca.org
+│  ├─ url: http://re-becca.org/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/wide-align
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/wide-align/LICENSE
+├─ winston-transport@4.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/winstonjs/winston-transport
+│  ├─ publisher: Charlie Robbins
+│  ├─ email: charlie.robbins@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/winston-transport
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/winston-transport/LICENSE
+├─ winston@3.2.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/winstonjs/winston
+│  ├─ publisher: Charlie Robbins
+│  ├─ email: charlie.robbins@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/winston
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/winston/LICENSE
+├─ wrap-ansi@5.1.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/chalk/wrap-ansi
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: sindresorhus.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/wrap-ansi
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/wrap-ansi/license
+├─ wrappy@1.0.2
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/npm/wrappy
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me/
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/wrappy
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/wrappy/LICENSE
+├─ xtend@4.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/Raynos/xtend
+│  ├─ publisher: Raynos
+│  ├─ email: raynos2@gmail.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/xtend
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/xtend/LICENSE
+├─ y18n@4.0.0
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/yargs/y18n
+│  ├─ publisher: Ben Coe
+│  ├─ email: ben@npmjs.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/y18n
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/y18n/LICENSE
+├─ yargs-parser@13.1.2
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/yargs/yargs-parser
+│  ├─ publisher: Ben Coe
+│  ├─ email: ben@npmjs.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/yargs/node_modules/yargs-parser
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/yargs/node_modules/yargs-parser/LICENSE.txt
+├─ yargs-parser@7.0.0
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/yargs/yargs-parser
+│  ├─ publisher: Ben Coe
+│  ├─ email: ben@npmjs.com
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/yargs-parser
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/yargs-parser/LICENSE.txt
+├─ yargs-unparser@1.6.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/yargs/yargs-unparser
+│  ├─ publisher: André Cruz
+│  ├─ email: andre@moxy.studio
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/yargs-unparser
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/yargs-unparser/LICENSE
+├─ yargs@13.3.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/yargs/yargs
+│  ├─ path: /mnt/e/Development/botFramework/node_modules/yargs
+│  └─ licenseFile: /mnt/e/Development/botFramework/node_modules/yargs/LICENSE
+└─ z-schema@3.19.1
+   ├─ licenses: MIT
+   ├─ repository: https://github.com/zaggino/z-schema
+   ├─ path: /mnt/e/Development/botFramework/node_modules/z-schema
+   └─ licenseFile: /mnt/e/Development/botFramework/node_modules/z-schema/LICENSE
+
