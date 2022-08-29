@@ -7,7 +7,7 @@
 var http = require('http');
 var https = require('https');
 var express = require("express");
-var uuidV4 = require('uuid/v4');
+import { v4 as uuidv4 } from 'uuid';
 var logger = require('../logger');
 var rabbit = require('../rabbitmq');
 var configManager = require('./config.js');
